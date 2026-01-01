@@ -1,16 +1,56 @@
-# React + Vite
+# Yash Bansal – Personal Portfolio 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **Portfolio Repository**! This project contains the source code for my personal portfolio website built using **React and Vite**. It showcases my skills, projects, experience, and contact information.
 
-Currently, two official plugins are available:
+🚀 A portfolio is a collection of work samples that highlights your skills, qualifications, training, and experiences — giving insight into your professional journey and personality. :contentReference[oaicite:0]{index=0}
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 👨‍💻 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This repository hosts a responsive and modern **portfolio website** designed to present my work, background, and achievements in an engaging way. It’s built with:
 
-## Expanding the ESLint configuration
+- **React** — UI framework for dynamic components  
+- **Vite** — fast development build tool  
+- **HTML, CSS & JavaScript** — foundational web technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The site is structured to be clean, performant, and professional — perfect for sharing with employers, collaborators, and network connections.
+
+---
+
+## 🧠 Features
+
+✔ Clean, responsive UI that works on desktop and mobile  
+✔ Showcase of skills, projects, and achievements  
+✔ Contact section with links to social profiles  
+✔ Optimized development experience using Vite  
+✔ Easy to extend with new projects or sections
+
+---
+
+## 🚀 Live Demo
+
+You can host this portfolio using **GitHub Pages**, **Netlify**, **Vercel**, or any static host for React apps.
+
+*(Add your live portfolio link here once deployed!)*
+
+🔗 https://your-username.github.io/portfolio
+
+---
+
+## 📦 Installation
+
+To contribute or test this portfolio locally, follow these steps:
+
+```bash
+# Clone the repo
+git clone https://github.com/codeurge123/Portfolio.git
+
+# Navigate into the project
+cd Portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
