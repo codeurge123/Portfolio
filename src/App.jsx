@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage';
 import ResumePage from './components/Resume';
 import ContactPage from './components/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
+import RouteLoader from './components/RouteLoader';
 
 export default function App() {
 
@@ -91,6 +92,9 @@ export default function App() {
             md:px-10
           "
         >
+
+          <RouteLoader />
+
           <ScrollToTop />
           <Navigation />
 
