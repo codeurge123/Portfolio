@@ -34,7 +34,7 @@ You can host this portfolio using **GitHub Pages**, **Netlify**, **Vercel**, or 
 
 *(Add your live portfolio link here once deployed!)*
 
-🔗 https://your-username.github.io/portfolio
+🔗 https://yashbansal-porfolio.vercel.app/#/
 
 ---
 

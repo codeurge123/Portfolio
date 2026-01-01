@@ -104,7 +104,7 @@ export default function ResumePage() {
         {/* Download Button */}
         <div className="text-center mt-8">
           <a
-            href="/public/YASHBANSAL.pdf"
+            href="../public/YASHBANSAL.pdf"
             download
             className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
           >
