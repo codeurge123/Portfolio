@@ -10,7 +10,6 @@ export default function RouteLoader() {
   const timeoutRef = useRef(null);
 
   useEffect(() => {
-    // loader ON
     setLoading(true);
 
     // clear previous timeout (important for fast route changes)
