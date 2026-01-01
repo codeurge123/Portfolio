@@ -6,6 +6,7 @@ import HomePage from './components/HomePage';
 import ProjectsPage from './components/ProjectsPage';
 import ResumePage from './components/Resume';
 import ContactPage from './components/ContactPage';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
 
@@ -90,6 +91,7 @@ export default function App() {
             md:px-10
           "
         >
+          <ScrollToTop />
           <Navigation />
 
           <Routes>
