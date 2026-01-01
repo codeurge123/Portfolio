@@ -58,7 +58,7 @@ export default function App() {
     w-6 h-6 rounded-full
     border border-white
     mix-blend-difference
-    transition-transform duration-200 ease-out
+    transition-transform duration-300 ease-out
   "
         style={{
           transform: `translate(${mousePos.x - 10}px, ${mousePos.y - 8}px)`

@@ -11,9 +11,48 @@ export default function ResumePage() {
         </p>
 
         <div className="mb-12">
+          <h2 className="text-2xl font-bold mb-6 text-orange-400 flex items-center gap-3">
+            <Briefcase className="w-7 h-7" />
+            Work Experience
+          </h2>
+
+          <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800 hover:border-orange-500 transition-colors duration-150">
+            <div className="flex justify-between items-start mb-2 flex-wrap gap-2">
+              <h3 className="text-xl font-semibold">
+                Delhi Transco Limited (DTL)
+              </h3>
+              <span className="text-sm text-gray-400">
+                June 2025 – July 2025
+              </span>
+            </div>
+
+            <p className="text-gray-400 mb-2">
+              Intern – Communication and Network Theory
+            </p>
+
+            <p className="text-gray-500 mb-3">
+              SLDC (State Load Dispatch Centre), Delhi, India
+            </p>
+
+            <ul className="list-disc list-inside text-gray-400 space-y-2">
+              <li>
+                Worked on applications of <span className="text-gray-300">network theory</span> and
+                <span className="text-gray-300"> communication protocols</span> in power system automation.
+              </li>
+              <li>
+                Gained hands-on exposure to <span className="text-gray-300">telecom infrastructure</span>
+                used in state-level power transmission and grid monitoring.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr className='border-slate-600 mb-8' />
+
+        <div className="mb-12">
           <h2 className="text-2xl font-bold mb-6 text-blue-400">Education</h2>
           <div className="space-y-6">
-            <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800">
+            <div className="bg-gray-900/50 hover:border-blue-400 p-6 rounded-lg border border-gray-800 transition-all duration-150">
               <div className="flex justify-between items-start mb-2">
                 <h3 className="text-xl font-semibold">Jaypee Institute of Information Technology</h3>
                 <span className="text-sm text-gray-400">Sep 2022 – July 2026</span>
