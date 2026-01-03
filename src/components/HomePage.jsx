@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { Link } from '../utils/Router';
 import { GitHubCalendar } from 'react-github-calendar';
+import { LinkPreviewDemo } from './LivePreviewDemo';
 
 
 // Home Page
@@ -39,32 +40,7 @@ export default function HomePage() {
                 <div className="mb-14">
                     <h2 className="text-2xl font-bold mb-6">Professional Work</h2>
 
-                    <p className="text-gray-300 text-md leading-relaxed mb-4">
-                        I specialize in building modern web applications with a strong focus
-                        on frontend architecture, performance, and maintainability, while
-                        also being comfortable across the full stack. I also build and
-                        maintain open-source npm packages such as{" "}
-                        <a
-                            href="https://www.npmjs.com/package/theme-switcher-bundler"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="click to visit my npm package"
-                            className="underline underline-offset-4 hover:text-white transition-colors"
-                        >
-                            theme-switcher-bundler
-                        </a>{" "}
-                        and{" "}
-                        <a
-                            href="https://www.npmjs.com/package/leetcode-heatmap-track"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="click to visit my npm package"
-                            className="underline underline-offset-4 hover:text-white transition-colors"
-                        >
-                            leetcode-heatmap-track
-                        </a>
-                        .
-                    </p>
+                   <LinkPreviewDemo />
 
                     <p className="text-gray-300 text-md leading-relaxed mb-4">
                         I actively work on personal and collaborative projects involving
