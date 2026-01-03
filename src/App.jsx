@@ -8,9 +8,15 @@ import ResumePage from './components/Resume';
 import ContactPage from './components/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 import RouteLoader from './components/RouteLoader';
+import MobileApp from './MobileApp';
+import useIsMobile from './components/useIsMobile';
 
 export default function App() {
+   const isMobile = useIsMobile();
 
+  if (isMobile) {
+    return <MobileApp />;
+  }
 
   return (
     <HashRouter>
