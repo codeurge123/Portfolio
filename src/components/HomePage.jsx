@@ -97,12 +97,12 @@ export default function HomePage() {
                         GitHub Contributions
                     </h2>
 
-                    <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 sm:p-6 overflow-x-auto">
+                    <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 md:p-5 overflow-x-auto">
                         <div className="min-w-[700px]" data-no-swipe>
                             <GitHubCalendar
                                 username="codeurge123"
                                 blockSize={12}
-                                blockMargin={3}
+                                blockMargin={4}
                                 fontSize={14}
                                 colorScheme="dark"
                                 transformData={(contributions) =>

@@ -71,7 +71,7 @@ export default function ResumePage() {
             </div>
 
             <p className="text-gray-400 text-sm sm:text-base">
-              B.Tech in ECE
+              B.Tech – Electronics & Communication Engineering
             </p>
             <p className="text-green-400 font-semibold mt-1">
               CGPA: 8.3/10
@@ -89,8 +89,8 @@ export default function ResumePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              { title: "Languages", items: ['C++', 'Python', 'MySQL', 'MATLAB', 'JavaScript', 'HTML', 'CSS'] },
-              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Bootstrap', 'Express.js', 'Sass'] },
+              { title: "Languages", items: ['C++', 'JavaScript', 'MySQL', 'MATLAB', 'Python', 'HTML', 'CSS'] },
+              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass'] },
               { title: "Tools", items: ['Git', 'GitHub', 'Google Colab', 'Postman', 'Figma'] },
               { title: "Databases / Cloud", items: ['Firebase', 'MongoDB'] },
             ].map(section => (
@@ -150,8 +150,9 @@ export default function ResumePage() {
         {/* Download */}
         <div className="text-center mt-10">
           <a
-            href=".././public/YASHBANSAL.pdf"
+            href="https://drive.google.com/file/d/1boW6F9Nu0ZJUOXhrXlLNS_w4HqpxWSdh/view?usp=drive_link"
             download
+            target="_blank"
             className="inline-flex items-center gap-2 bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
           >
             <Download className="w-5 h-5" />
