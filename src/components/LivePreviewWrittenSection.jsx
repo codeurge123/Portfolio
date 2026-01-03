@@ -10,7 +10,7 @@ export function LivePreviewWrittenSection() {
                 On{" "}
                 <LinkPreview
                     url="https://unwritten-codeblogs.vercel.app/"
-                    className="border-b font-semibold"
+                    className="border-b font-semibold text-gray-200 hover:text-white"
                 >
                     The Unwritten Code
                 </LinkPreview>

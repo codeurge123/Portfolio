@@ -18,14 +18,14 @@ export function LinkPreviewProfileSection() {
         I build and maintain open-source npm packages such as{" "}
         <LinkPreview
           url="https://www.npmjs.com/package/theme-switcher-bundler"
-          className="border-b font-semibold"
+          className="border-b font-semibold text-gray-200 hover:text-white"
         >
           theme-switcher-bundler
         </LinkPreview>{" "}
         and{" "}
         <LinkPreview
           url="https://www.npmjs.com/package/leetcode-heatmap-track"
-          className="border-b font-semibold"
+          className="border-b font-semibold text-gray-200 hover:text-white"
         >
           leetcode-heatmap-track
         </LinkPreview>
