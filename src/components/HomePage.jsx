@@ -8,7 +8,8 @@ import {
 } from 'lucide-react';
 import { Link } from '../utils/Router';
 import { GitHubCalendar } from 'react-github-calendar';
-import { LinkPreviewDemo } from './LivePreviewDemo';
+import { LinkPreviewProfileSection } from './LivePreviewProfileSection';
+import { LivePreviewWrittenSection } from './LivePreviewWrittenSection';
 
 
 // Home Page
@@ -40,7 +41,7 @@ export default function HomePage() {
                 <div className="mb-14">
                     <h2 className="text-2xl font-bold mb-6">Professional Work</h2>
 
-                   <LinkPreviewDemo />
+                   <LinkPreviewProfileSection />
 
                     <p className="text-gray-300 text-md leading-relaxed mb-4">
                         I actively work on personal and collaborative projects involving
@@ -107,21 +108,7 @@ export default function HomePage() {
                 <div className="mb-14">
                     <h2 className="text-2xl font-bold mb-4">Writing</h2>
 
-                    <p className="text-gray-300 text-md leading-relaxed">
-                        I write blogs to document my learning journey—covering frontend development,
-                        system design fundamentals, real-world project experiences, and practical
-                        engineering insights on{" "}
-                        <a
-                            href="https://unwritten-codeblogs.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            title="Visit My Blogs"
-                            className="underline underline-offset-4 hover:text-white transition-colors font-medium"
-                        >
-                            The Unwritten Code
-                        </a>
-                        .
-                    </p>
+                    <LivePreviewWrittenSection />
                 </div>
 
             </div>

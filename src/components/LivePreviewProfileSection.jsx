@@ -2,7 +2,7 @@
 import React from "react";
 import { LinkPreview } from "./ui/link-preview";
 
-export function LinkPreviewDemo() {
+export function LinkPreviewProfileSection() {
   return (
     <div className="flex text-gray-300 justify-center items-center flex-col">
 
