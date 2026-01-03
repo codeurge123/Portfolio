@@ -12,7 +12,7 @@ export default function Navigation() {
   }, []);
 
   useEffect(() => {
-    setMenuOpen(false); // close menu on route change
+    setMenuOpen(false);
   }, [location.pathname]);
 
   const formatTime = (date) =>
@@ -74,3 +74,6 @@ export default function Navigation() {
     </nav>
   );
 }
+
+
+// No need for this -- agar mobile ke refernce mein bola to

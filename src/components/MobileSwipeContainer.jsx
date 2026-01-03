@@ -7,7 +7,7 @@ export default function MobileSwipeContainer({ active, setActive, children }) {
   const isHorizontal = useRef(false);
 
   const onTouchStart = (e) => {
-    // 🔒 HARD LOCK: if touch starts in no-swipe zone
+    // HARD LOCK: if touch starts in no-swipe zone
     if (e.target.closest("[data-no-swipe]")) {
       allowSwipe.current = false;
       return;
@@ -25,7 +25,7 @@ export default function MobileSwipeContainer({ active, setActive, children }) {
     const dx = Math.abs(e.touches[0].clientX - startX.current);
     const dy = Math.abs(e.touches[0].clientY - startY.current);
 
-    // Decide swipe direction once
+    // Deciding swipe direction once
     if (!isHorizontal.current && dx > dy && dx > 12) {
       isHorizontal.current = true;
     }

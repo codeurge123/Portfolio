@@ -38,7 +38,7 @@ export function Link({ to, children, className }) {
   );
 }
 
-// Custom hook to use router context
+// Custom hook banya hai to use router context
 export function useRouter() {
   return useContext(RouterContext);
 }

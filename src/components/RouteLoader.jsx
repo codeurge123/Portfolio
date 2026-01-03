@@ -6,18 +6,17 @@ export default function RouteLoader() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
-  // to track latest timeout
   const timeoutRef = useRef(null);
 
   useEffect(() => {
     setLoading(true);
 
-    // clear previous timeout (important for fast route changes)
+    // clear prviousdj timeout (important for fast route changes)
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
 
-    // minimum loader time (ms)
+    // minimum loader time 
     const MIN_LOADING_TIME = 1100; 
 
     timeoutRef.current = setTimeout(() => {

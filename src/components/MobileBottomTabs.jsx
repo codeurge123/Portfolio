@@ -30,7 +30,7 @@ export default function MobileBottomTabs({ active, setActive, onSpecial }) {
         </button>
       ))}
 
-      {/* SPECIAL / MORE BUTTON */}
+      {/* MORE BUTTON */}
       <button
         onClick={onSpecial}
         className="flex flex-col items-center text-gray-400 hover:text-white transition-colors"

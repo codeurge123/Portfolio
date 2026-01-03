@@ -8,7 +8,6 @@ import {
 export default function SpecialMenu({ open, onClose }) {
   return (
     <>
-      {/* BACKDROP */}
       {open && (
         <div
           onClick={onClose}

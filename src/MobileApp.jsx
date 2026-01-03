@@ -15,13 +15,13 @@ export default function MobileApp() {
   const [specialOpen, setSpecialOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  // ⏱ Page loader (1s)
+  // Page loading..
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  // ⬆ Scroll to top on tab change
+  // Scroll to top on tab change 
   useEffect(() => {
     window.scrollTo({
       top: 0,

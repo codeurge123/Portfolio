@@ -171,7 +171,7 @@ export default function ProjectsPage() {
             </div>
           )}
 
-          {/* Toggle Button */}
+          {/* View All Button */}
           {projects.length > 3 && (
             <div className="mt-8 sm:mt-10 flex justify-center">
               <button
