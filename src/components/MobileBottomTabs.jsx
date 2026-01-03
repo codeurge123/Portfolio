@@ -1,6 +1,7 @@
 import {
   Home,
   Briefcase,
+  Folder,
   FileText,
   Mail,
   MoreHorizontal,
@@ -9,7 +10,7 @@ import {
 export default function MobileBottomTabs({ active, setActive, onSpecial }) {
   const tabs = [
     { id: 0, icon: Home },
-    { id: 1, icon: Briefcase },
+    { id: 1, icon: Folder },
     { id: 2, icon: FileText },
     { id: 3, icon: Mail },
   ];

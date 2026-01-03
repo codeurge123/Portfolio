@@ -3,7 +3,7 @@ import { Award, Code, Briefcase, Download } from 'lucide-react';
 
 export default function ResumePage() {
   return (
-    <div className="min-h-screen px-4 sm:px-6 pt-24 pb-10">
+    <div className="min-h-screen px-4 sm:px-6 pt-14 md:pt-24 pb-10">
       <div className="max-w-4xl mx-auto animate-fade-in">
 
         {/* Header */}
