@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, ExternalLink, Award, Code, Briefcase, Download } from 'lucide-react';
+import { Github, ExternalLink } from 'lucide-react';
 
 export default function ProjectsPage() {
   const projects = [
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
       title: "QueryDocs",
       date: "2025",
       description:
-        "QueryDocs is a documentation-focused project designed to simplify querying, organizing, and navigating technical documentation. It aims to improve developer productivity by making structured information easily searchable and accessible.",
+        "Documentation-focused project designed to simplify querying, organizing, and navigating technical documentation.",
       tech: ["JavaScript", "Documentation", "Web"],
       color: "orange",
       github: "https://github.com/codeurge123/QueryDocs",
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
       title: "DIJI-YATRA",
       date: "2024",
       description:
-        "DIJI-YATRA is a C++ based travel simulation project that uses graph theory and Dijkstra’s algorithm to find the shortest path between cities, simulate real-world traffic conditions, and estimate travel fares. It also includes an admin panel to configure routes, traffic conditions, and fare data.",
+        "C++ based travel simulation using Dijkstra’s algorithm for shortest path and traffic simulation.",
       tech: ["C++", "STL", "Algorithms"],
       color: "green",
       github: "https://github.com/codeurge123/DIJI-YATRA"
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
       title: "Alexa-PersonalAssistant",
       date: "2024",
       description:
-        "Alexa-PersonalAssistant is a voice-enabled assistant built using Amazon’s Alexa Skills Kit. It performs tasks such as answering questions, providing weather updates, and executing custom voice commands, enhancing hands-free productivity and convenience.",
+        "Voice-enabled assistant built using Amazon Alexa Skills Kit.",
       tech: ["Alexa Skills Kit", "Python"],
       color: "purple",
       github: "https://github.com/codeurge123/Alexa-PersonalAssistant"
@@ -79,39 +79,43 @@ export default function ProjectsPage() {
     }
   ];
 
-
   const [showAll, setShowAll] = React.useState(false);
 
-
   return (
-    <div className="min-h-screen px-6 pt-26 pb-10">
+    <div className="min-h-screen px-4 sm:px-6 pt-24 pb-10">
       <div className="max-w-4xl mx-auto animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 flex items-center gap-3">
+
+        {/* Header */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 flex items-center gap-3">
           Projects 🚀
         </h1>
-        <p className="text-gray-400 text-lg mb-12">
+
+        <p className="text-gray-400 text-base sm:text-lg mb-10 sm:mb-12">
           Here are some of my recent projects showcasing my skills in web development and AI.
         </p>
 
-        <div className="space-y-8">
+        {/* Projects */}
+        <div className="space-y-6 sm:space-y-8">
           {projects
             .slice(0, showAll ? projects.length : 3)
             .map((project, index) => (
               <div
                 key={index}
-                className="bg-black border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-all hover:shadow-lg hover:shadow-gray-900/50"
+                className="bg-black border border-gray-800 rounded-lg p-4 sm:p-6 hover:border-gray-700 transition-all hover:shadow-lg hover:shadow-gray-900/50"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h2 className="text-2xl font-semibold">{project.title}</h2>
+                {/* Title + Links */}
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
+                  <h2 className="text-xl sm:text-2xl font-semibold">
+                    {project.title}
+                  </h2>
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex gap-4">
                     {project.github && (
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="View on GitHub"
-                        className="text-gray-400 hover:text-white transition-colors"
+                        className="text-gray-400 hover:text-white"
                       >
                         <Github className="w-5 h-5" />
                       </a>
@@ -122,8 +126,7 @@ export default function ProjectsPage() {
                         href={project.Live}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="View Live"
-                        className="text-gray-400 hover:text-white transition-colors"
+                        className="text-gray-400 hover:text-white"
                       >
                         <ExternalLink className="w-5 h-5" />
                       </a>
@@ -131,18 +134,20 @@ export default function ProjectsPage() {
                   </div>
                 </div>
 
+                <p className="text-xs sm:text-sm text-gray-400 mb-3">
+                  {project.date}
+                </p>
 
-                <p className="text-sm text-gray-400 mb-3">{project.date}</p>
-
-                <p className="text-gray-300 mb-4 leading-relaxed">
+                <p className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
                   {project.description}
                 </p>
 
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, i) => (
                     <span
                       key={i}
-                      className={`bg-${project.color}-900/30 text-${project.color}-400 px-3 py-1 rounded-md text-sm border border-${project.color}-700/50`}
+                      className={`bg-${project.color}-900/30 text-${project.color}-400 px-2.5 py-1 rounded-md text-xs sm:text-sm border border-${project.color}-700/50`}
                     >
                       {tech}
                     </span>
@@ -150,30 +155,33 @@ export default function ProjectsPage() {
                 </div>
               </div>
             ))}
+
+          {/* GitHub Link */}
           {showAll && (
-            <div className="flex justify-center gap-4">
-              For More Projects -  <a
+            <div className="flex justify-center gap-2 text-sm sm:text-lg">
+              For more projects —
+              <a
                 href="https://github.com/codeurge123"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="View on GitHub"
-                className="text-gray-400 text-lg border-b hover:text-white transition-colors"
+                className="text-gray-400 border-b hover:text-white"
               >
                 GitHub
               </a>
             </div>
           )}
+
+          {/* Toggle Button */}
           {projects.length > 3 && (
-            <div className="mt-10 flex justify-center">
+            <div className="mt-8 sm:mt-10 flex justify-center">
               <button
                 onClick={() => setShowAll(!showAll)}
-                className="text-gray-300 hover:text-white underline underline-offset-4 transition-colors font-medium cursor-pointer"
+                className="text-gray-300 cursor-pointer hover:text-white underline underline-offset-4 font-medium"
               >
                 {showAll ? 'Show less projects' : 'View all projects'}
               </button>
             </div>
           )}
-
         </div>
       </div>
     </div>
