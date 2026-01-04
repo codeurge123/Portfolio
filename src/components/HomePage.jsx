@@ -92,13 +92,14 @@ export default function HomePage() {
                 <hr className="border-slate-600 mb-6 sm:mb-8" />
 
                 {/* GitHub Contributions */}
-                <div className="mb-10 sm:mb-14">
+                <div className="mb-10 sm:mb-14 ">
                     <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
                         GitHub Contributions
                     </h2>
 
-                    <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 md:p-5 overflow-x-auto">
-                        <div className="min-w-[700px]" data-no-swipe>
+                    <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 md:p-4 overflow-x-auto">
+                        <div className="min-w-[700px] " 
+                        data-no-swipe>
                             <GitHubCalendar
                                 username="codeurge123"
                                 blockSize={12}
