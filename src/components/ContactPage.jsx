@@ -1,5 +1,6 @@
 import React from "react";
 import { Github, Linkedin, Mail } from 'lucide-react';
+import discord from "../../public/discord.png"
 
 export default function ContactPage() {
   return (
@@ -94,7 +95,7 @@ export default function ContactPage() {
               className="group transition-all duration-200 hover:scale-130"
             >
               <img
-                src="../public/discord.png"
+                src={discord}
                 alt="Discord"
                 className="w-7 h-7 sm:w-8 sm:h-8 opacity-70 group-hover:opacity-100"
               />
