@@ -8,8 +8,8 @@ import {
 } from 'lucide-react';
 import { Link } from '../utils/Router';
 import { GitHubCalendar } from 'react-github-calendar';
-import { LinkPreviewProfileSection } from './LivePreviewProfileSection';
-import { LivePreviewWrittenSection } from './LivePreviewWrittenSection';
+import { LinkPreviewProfileSection } from '../components/LivePreviewProfileSection';
+import { LivePreviewWrittenSection } from '../components/LivePreviewWrittenSection';
 
 
 // Home Page

@@ -85,6 +85,21 @@ export default function ContactPage() {
             >
               <Mail className="w-7 h-7 sm:w-8 sm:h-8" />
             </a>
+
+
+            <a
+              href="https://discord.gg/6BenyqFE"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group transition-all duration-200 hover:scale-130"
+            >
+              <img
+                src="../public/discord.png"
+                alt="Discord"
+                className="w-7 h-7 sm:w-8 sm:h-8 opacity-70 group-hover:opacity-100"
+              />
+            </a>
+
           </div>
         </div>
 
