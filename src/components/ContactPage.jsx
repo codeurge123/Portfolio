@@ -92,7 +92,7 @@ export default function ContactPage() {
               href="https://discord.gg/6BenyqFE"
               target="_blank"
               rel="noopener noreferrer"
-              className="group transition-all duration-200 hover:scale-130"
+              className="group transition-all duration-200 scale-140"
             >
               <img
                 src={discord}
