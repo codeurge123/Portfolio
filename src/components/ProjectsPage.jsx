@@ -22,6 +22,15 @@ export default function ProjectsPage() {
       color: 'green',
       github: 'https://github.com/codeurge123/skincurex'
     },
+     {
+      title: 'LeetCode Heatmap Tracker',
+      date: '2025',
+      description:
+        'Open-source npm package to visualize LeetCode activity as a heatmap and having 800+ downloads',
+      tech: ['React', 'NPM', 'API'],
+      color: 'cyan',
+      github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
+    },
     {
       title: 'SwiftRoute',
       date: 'Sept 2025',
@@ -68,15 +77,6 @@ export default function ProjectsPage() {
       color: 'amber',
       github: 'https://github.com/codeurge123/npm-theme-switcher-bundler'
     },
-    {
-      title: 'LeetCode Heatmap Track',
-      date: '2025',
-      description:
-        'Open-source npm package to visualize LeetCode activity as a heatmap.',
-      tech: ['React', 'NPM', 'API'],
-      color: 'cyan',
-      github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
-    }
   ];
 
   const [showAll, setShowAll] = React.useState(false);
