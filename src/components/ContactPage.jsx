@@ -89,7 +89,7 @@ export default function ContactPage() {
 
 
             <a
-              href="https://discord.gg/6BenyqFE"
+              href="https://discord.gg/SCtppgeh"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-all duration-200 scale-140"
