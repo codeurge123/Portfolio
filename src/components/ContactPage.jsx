@@ -15,7 +15,7 @@ export default function ContactPage() {
           Feel free to reach out to me. I'm always open to discussing new projects,
           creative ideas, or opportunities.
         </p>
-
+     
         {/* Contact Info */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 mb-10 sm:mb-12">
           {/* Email */}
