@@ -74,7 +74,7 @@ export default function ResumePage() {
               B.Tech – Electronics & Communication Engineering
             </p>
             <p className="text-green-400 font-semibold mt-1">
-              CGPA: 8.3/10
+              CGPA: 8.25/10
             </p>
           </div>
         </div>
