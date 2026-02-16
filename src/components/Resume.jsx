@@ -24,6 +24,38 @@ export default function ResumePage() {
           <div className="bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-800 hover:border-orange-500 transition-colors">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
               <h3 className="text-lg sm:text-xl font-semibold">
+                Metasys Consulting
+              </h3>
+              <span className="text-xs sm:text-sm text-gray-400">
+                Feb 2026 – Present
+              </span>
+            </div>
+
+            <p className="text-gray-400 mb-3 text-sm sm:text-base">
+              Frontend Engineer
+            </p>
+
+            <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm sm:text-base">
+              <li>
+                Developing modern, server-rendered and client-side applications using
+                <span className="text-gray-300"> Next.js</span> and
+                <span className="text-gray-300"> TypeScript</span> with strong type safety and optimized architecture.
+              </li>
+              <li>
+                Implementing reusable UI components and responsive layouts while ensuring
+                <span className="text-gray-300"> performance optimization</span> and
+                <span className="text-gray-300"> SEO best practices</span>.
+              </li>
+              <li>
+                Collaborating with backend teams to integrate
+                <span className="text-gray-300"> RESTful APIs</span> and maintain clean, maintainable code standards.
+              </li>
+            </ul>
+
+          </div>
+          <div className="bg-gray-900/50 my-5 p-4 sm:p-6 rounded-lg border border-gray-800 hover:border-orange-500 transition-colors">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
+              <h3 className="text-lg sm:text-xl font-semibold">
                 Delhi Transco Limited (DTL)
               </h3>
               <span className="text-xs sm:text-sm text-gray-400">
@@ -89,9 +121,9 @@ export default function ResumePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              { title: "Languages", items: ['C++', 'JavaScript', 'MySQL', 'MATLAB', 'Python', 'HTML', 'CSS'] },
+              { title: "Languages", items: ['C++', 'TypeScript' ,'JavaScript', 'MySQL', 'HTML', 'CSS'] },
               { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass'] },
-              { title: "Tools", items: ['Git', 'GitHub', 'Google Colab', 'Postman', 'Figma'] },
+              { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma'] },
               { title: "Databases / Cloud", items: ['Firebase', 'MongoDB'] },
             ].map(section => (
               <div key={section.title} className="bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-800">

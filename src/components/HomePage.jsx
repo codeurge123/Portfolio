@@ -23,14 +23,13 @@ export default function HomePage() {
                     <p className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
                         Sup, I&apos;m Yash Bansal 👋
                     </p>
-
                     <span className="inline-block bg-green-900/30 text-green-400 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm border border-green-700">
-                        ● Available for freelance
+                        <span className='animate-pulse text-green-500 [animation-duration:1s]'>●</span> Available for freelance
                     </span>
                 </div>
 
                 <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-10 sm:mb-14">
-                    I&apos;m a Full Stack Web Developer from Uttar Pradesh, India, with several
+                    I&apos;m a Full Stack Developer from Uttar Pradesh, India, with several
                     years of hands-on coding experience and strong exposure to building
                     real-world products. I enjoy crafting fast, scalable, and
                     user-friendly web applications, with a simple goal—solving meaningful
