@@ -24,15 +24,6 @@ export default function ProjectsPage() {
       Live: 'https://getbugged.codeurge.online/'
     },
     {
-      title: 'LeetCode Heatmap Tracker',
-      date: 'Dec 2025',
-      description:
-        'Open-source npm package to visualize LeetCode activity as a heatmap and having 900+ downloads',
-      tech: ['React', 'NPM', 'API'],
-      color: 'green',
-      github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
-    },
-    {
       title: 'Pulse',
       date: 'Feb 2026',
       description:
@@ -40,6 +31,15 @@ export default function ProjectsPage() {
       tech: ['MongoDB', 'Express.js', 'React', 'Node.js'],
       color: 'white',
       github: 'https://github.com/codeurge123/Pulse'
+    },
+    {
+      title: 'LeetCode Heatmap Tracker',
+      date: 'Dec 2025',
+      description:
+        'Open-source npm package to visualize LeetCode activity as a heatmap and having 900+ downloads',
+      tech: ['React', 'NPM', 'API'],
+      color: 'green',
+      github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
     },
     {
       title: "SkinCureX",
@@ -101,7 +101,10 @@ export default function ProjectsPage() {
             .map((project, index) => (
               <div
                 key={index}
-                className="bg-black border border-gray-800 rounded-lg p-4 sm:p-6 hover:border-gray-700 transition-all hover:shadow-lg hover:shadow-gray-900/50"
+                className="bg-black border border-gray-800 rounded-lg p-4 sm:p-6 
+hover:border-gray-700 transition-all duration-300 
+hover:shadow-xl hover:shadow-blue-900/20 
+hover:-translate-y-1"
               >
                 {/* Title + Links */}
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
