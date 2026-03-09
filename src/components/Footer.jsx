@@ -42,7 +42,9 @@ function SocialLink({ icon: Icon, href }) {
         rounded-full
         hover:bg-slate-800
         hover:text-white
-        transition-colors
+        hover:-translate-y-1.5
+        transition-all
+        duration-150
         flex items-center justify-center
       "
     >
