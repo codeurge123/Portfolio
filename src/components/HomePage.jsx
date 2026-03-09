@@ -41,7 +41,7 @@ export default function HomePage() {
                 {/* Open Source */}
                 <div className="mb-14">
                     <h2 className="text-xl sm:text-2xl font-bold mb-6">
-                        Open Source Contribution
+                        Open Source Contributions
                     </h2>
 
                     <p className="text-gray-300 mb-6 text-justify">

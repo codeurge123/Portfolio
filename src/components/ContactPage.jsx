@@ -56,7 +56,7 @@ export default function ContactPage() {
         </div>
 
         {/* Social Links */}
-        <div className="bg-gradient-to-r from-gray-900/50 to-gray-800/50 p-6 sm:p-8 rounded-lg border border-gray-800">
+        <div className="bg-gradient from-gray-900/50 to-gray-800/50 p-6 sm:p-8 rounded-lg border border-gray-800">
           <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">
             Let&apos;s Connect
           </h2>
@@ -105,7 +105,7 @@ export default function ContactPage() {
 
 
             <a
-              href="https://discord.gg/SCtppgeh"
+              href="https://discord.com/channels/@me"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-all duration-200 scale-140"
@@ -122,11 +122,12 @@ export default function ContactPage() {
 
         {/* Footer Note */}
         <div className="mt-10 sm:mt-12 text-center">
-          <p className="text-gray-400 mb-2">
-            💡 Contact me through email if you have any feedback!
+          <p className="text-gray-300 mb-2 text-sm sm:text-base">
+            💬 Have feedback, ideas, or want to collaborate? I’d love to hear from you.
           </p>
-          <p className="text-xs sm:text-sm text-gray-500">
-            Phone: +91 789580xxxx
+
+          <p className="text-gray-400 mb-1 text-sm">
+            Feel free to reach out anytime.
           </p>
         </div>
 

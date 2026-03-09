@@ -91,7 +91,7 @@ export default function ProjectsPage() {
         </h1>
 
         <p className="text-gray-400 text-base sm:text-lg mb-10 sm:mb-12">
-          Here are some of my recent projects showcasing my skills in web development and AI.
+          Real-world projects where I build scalable web applications and experiment with AI-powered solutions.
         </p>
 
         {/* Projects */}

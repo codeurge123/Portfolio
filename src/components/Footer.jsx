@@ -43,8 +43,9 @@ function SocialLink({ icon: Icon, href }) {
         hover:bg-slate-800
         hover:text-white
         hover:-translate-y-1.5
+        hover:scale-110
         transition-all
-        duration-150
+        duration-100
         flex items-center justify-center
       "
     >
