@@ -8,47 +8,47 @@ export default function ProjectsPage() {
       date: 'Nov 2025 – Present',
       description:
         'Developer-centric UI component platform featuring modern, animated, and reusable components for rapid frontend development.',
-      tech: ['React', 'Tailwind CSS', 'JavaScript'],
+      tech: ['React', 'MongoDB', 'Node.js', 'Express.js', 'Tailwind CSS'],
       color: 'blue',
       github: 'https://github.com/codeurge123/creatx',
       Live: 'https://creatxui.vercel.app'
     },
     {
-      title: 'SkinCureX',
-      date: 'July 2025',
+      title: 'GetBugged',
+      date: 'Feb 2026',
       description:
-        'AI-powered web platform that enables users to upload skin images and receive disease predictions.',
-      tech: ['Python', 'Machine Learning', 'HTML/CSS', 'JavaScript'],
-      color: 'green',
-      github: 'https://github.com/codeurge123/skincurex'
+        'A platform that helps developers discover, report, and track bugs efficiently. Provides a collaborative environment for debugging, issue management, and improving developer productivity.',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      color: 'purple',
+      github: 'https://github.com/codeurge123/getBugged',
+      Live: 'https://getbugged.codeurge.online/'
     },
-     {
+    {
       title: 'LeetCode Heatmap Tracker',
-      date: '2025',
+      date: 'Dec 2025',
       description:
-        'Open-source npm package to visualize LeetCode activity as a heatmap and having 800+ downloads',
+        'Open-source npm package to visualize LeetCode activity as a heatmap and having 900+ downloads',
       tech: ['React', 'NPM', 'API'],
-      color: 'cyan',
+      color: 'green',
       github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
     },
     {
-      title: 'SwiftRoute',
-      date: 'Sept 2025',
+      title: 'Pulse',
+      date: 'Feb 2026',
       description:
-        'AI-driven trip planning platform that generates optimized multi-day itineraries.',
-      tech: ['React', 'Firebase', 'Gemini API'],
-      color: 'purple',
-      github: 'https://github.com/codeurge123/swiftroute'
+        'A social media platform where users can create profiles, share posts, like and comment on content, and interact through a dynamic news feed with secure authentication.',
+      tech: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      color: 'white',
+      github: 'https://github.com/codeurge123/Pulse'
     },
     {
-      title: "QueryDocs",
-      date: "2025",
+      title: "SkinCureX",
+      date: "July 2025",
       description:
-        "Documentation-focused project designed to simplify querying, organizing, and navigating technical documentation.",
-      tech: ["JavaScript", "Documentation", "Web"],
+        "AI-powered web platform that enables users to upload skin images and receive disease predictions.",
+      tech: ["Python", "Javascript", "Machine Learning", "FAST API"],
       color: "orange",
-      github: "https://github.com/codeurge123/QueryDocs",
-      Live: 'https://query-docs-sql.vercel.app/#install'
+      github: "https://github.com/codeurge123/skincurex",
     },
     {
       title: "DIJI-YATRA",
@@ -69,13 +69,13 @@ export default function ProjectsPage() {
       github: "https://github.com/codeurge123/Alexa-PersonalAssistant"
     },
     {
-      title: 'Theme Switcher Bundler',
-      date: '2025',
+      title: 'codeforgood',
+      date: 'In Progress',
       description:
-        'Lightweight npm package for managing dark/light themes with zero config.',
-      tech: ['JavaScript', 'NPM'],
-      color: 'amber',
-      github: 'https://github.com/codeurge123/npm-theme-switcher-bundler'
+        'A platform for developer which help them to contribute in genuine repo',
+      tech: ['MongoDB', 'React', 'Node.js', 'Express.js', 'OAuth'],
+      color: 'blue',
+      github: ''
     },
   ];
 

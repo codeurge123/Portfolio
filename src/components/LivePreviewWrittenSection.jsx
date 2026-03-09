@@ -4,7 +4,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 export function LivePreviewWrittenSection() {
     return (
-        <div className="flex text-gray-300 justify-center items-center flex-col">
+        <div className="flex text-gray-300 justify-center text-md items-center flex-col text-justify">
 
             <p className="mb-5">
                 On{" "}

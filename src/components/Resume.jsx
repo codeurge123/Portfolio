@@ -156,7 +156,7 @@ export default function ResumePage() {
               <Code className="w-7 h-7 text-orange-400 mb-3" />
               <h3 className="text-lg font-semibold mb-1">LeetCode Excellence</h3>
               <p className="text-gray-400 text-sm sm:text-base">
-                Solved 450+ problems with a max rating of 1544
+                Solved 500+ problems with a max rating of 1544
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function ResumePage() {
         {/* Download */}
         <div className="text-center mt-10">
           <a
-            href="https://drive.google.com/file/d/1boW6F9Nu0ZJUOXhrXlLNS_w4HqpxWSdh/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1oHG48THYUFPd-_0K1wqCf-kVsiaNZ1jT/view?usp=drive_link"
             download
             target="_blank"
             className="inline-flex items-center gap-2 bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"

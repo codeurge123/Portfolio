@@ -40,7 +40,7 @@ function SocialLink({ icon: Icon, href }) {
       className="
         p-3 sm:p-3.5
         rounded-full
-        hover:bg-slate-900
+        hover:bg-slate-800
         hover:text-white
         transition-colors
         flex items-center justify-center

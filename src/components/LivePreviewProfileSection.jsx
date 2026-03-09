@@ -4,7 +4,7 @@ import { LinkPreview } from "./ui/link-preview";
 
 export function LinkPreviewProfileSection() {
   return (
-    <div className="flex text-gray-300 justify-center items-center flex-col">
+    <div className="flex text-gray-300 justify-center items-center text-md flex-col text-justify">
 
       {/* About */}
       <p className="mb-6 ">

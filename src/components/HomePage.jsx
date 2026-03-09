@@ -28,12 +28,12 @@ export default function HomePage() {
                     </span>
                 </div>
 
-                <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-10 sm:mb-14">
-                    I&apos;m a Full Stack Developer from Uttar Pradesh, India, with several
-                    years of hands-on coding experience and strong exposure to building
-                    real-world products. I enjoy crafting fast, scalable, and
-                    user-friendly web applications, with a simple goal—solving meaningful
-                    problems through clean and reliable code.
+                <p className="text-base sm:text-lg text-gray-300 leading-relaxed mb-10 sm:mb-14 text-justify">
+                    I build things for the web that are fast, reliable, and actually useful.
+                    I'm a developer who enjoys turning ideas into
+                    real-world products. From crafting smooth user interfaces to building
+                    scalable backend systems, I enjoy solving problems through clean,
+                    well-structured code and thoughtful engineering.
                 </p>
 
                 <hr className="border-slate-600 mb-6 sm:mb-8" />
@@ -46,14 +46,14 @@ export default function HomePage() {
 
                     <LinkPreviewProfileSection />
 
-                    <p className="text-gray-300 text-sm sm:text-md leading-relaxed mb-4">
+                    <p className="text-gray-300 text-md sm:text-md leading-relaxed mb-4 text-justify">
                         I actively work on personal and collaborative projects involving
                         product design, frontend engineering, and backend integration.
                         These projects are built with production-level thinking—authentication
                         flows, API design, state management, and scalable UI systems.
                     </p>
 
-                    <p className="text-gray-300 text-sm sm:text-md leading-relaxed">
+                    <p className="text-gray-300 text-md sm:text-md leading-relaxed text-justify">
                         Alongside development, I enjoy exploring how real products are
                         built, deployed, and scaled, continuously improving my workflow by
                         learning from open-source projects and industry best practices.
@@ -68,19 +68,19 @@ export default function HomePage() {
                         What Makes Me Different
                     </h2>
 
-                    <p className="text-gray-300 text-sm sm:text-md leading-relaxed mb-4">
+                    <p className="text-gray-300 text-md sm:text-md leading-relaxed mb-4 text-justify">
                         I take complete ownership of the work I do. I don’t just aim to make
                         things work—I care deeply about code quality, structure, and
                         long-term maintainability.
                     </p>
 
-                    <p className="text-gray-300 text-sm sm:text-md leading-relaxed mb-4">
+                    <p className="text-gray-300 text-md sm:text-md leading-relaxed mb-4 text-justify">
                         I approach development with both a technical and problem-solving
                         mindset. Good software isn’t just about writing code—it’s about
                         understanding users, constraints, and real-world use cases.
                     </p>
 
-                    <p className="text-gray-300 text-sm sm:text-md leading-relaxed">
+                    <p className="text-gray-300 text-md sm:text-md leading-relaxed text-justify">
                         I also use AI-assisted development to speed up learning and
                         execution, but always with proper review, testing, and architectural
                         control—ensuring the final output remains reliable and
@@ -97,8 +97,8 @@ export default function HomePage() {
                     </h2>
 
                     <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 md:p-4 overflow-x-auto">
-                        <div className="min-w-[700px] " 
-                        data-no-swipe>
+                        <div className="min-w-[700px] "
+                            data-no-swipe>
                             <GitHubCalendar
                                 username="codeurge123"
                                 blockSize={12}
