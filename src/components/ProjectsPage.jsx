@@ -1,191 +1,132 @@
 import React from "react";
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink } from "lucide-react";
+import creatx from '../assets/creatx.png'
+import getbugged from '../assets/getbugged.png'
+import npm from '../assets/npm.png'
+import pulse from '../assets/pulse.png'
+import codeforgood from '../assets/codeforgood.png'
+import blog from '../assets/blog.png'
+import { div } from "motion/react-client";
 
 export default function ProjectsPage() {
+
   const projects = [
     {
-      title: 'Creatx.',
-      date: 'Nov 2025 – Present',
-      description:
-        'Developer-centric UI component platform featuring modern, animated, and reusable components for rapid frontend development.',
-      tech: ['React', 'MongoDB', 'Node.js', 'Express.js', 'Tailwind CSS'],
-      color: 'blue',
-      github: 'https://github.com/codeurge123/creatx',
-      Live: 'https://creatxui.vercel.app'
+      title: "Creatx",
+      description: "Developer-centric UI component platform with animated reusable components.",
+      image: creatx,
+      github: "https://github.com/codeurge123/creatx",
+      live: "https://creatxui.vercel.app"
     },
     {
-      title: 'GetBugged',
-      date: 'Feb 2026',
-      description:
-        'A platform that helps developers discover, report, and track bugs efficiently. Provides a collaborative environment for debugging, issue management, and improving developer productivity.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js'],
-      color: 'purple',
-      github: 'https://github.com/codeurge123/getBugged',
-      Live: 'https://getbugged.codeurge.online/'
+      title: "GetBugged",
+      description: "Platform for developers to discover, report and track bugs collaboratively.",
+      image: getbugged,
+      github: "https://github.com/codeurge123/getBugged",
+      live: "https://getbugged.codeurge.online/"
     },
     {
-      title: 'Pulse',
-      date: 'Feb 2026',
-      description:
-        'A social media platform where users can create profiles, share posts, like and comment on content, and interact through a dynamic news feed with secure authentication.',
-      tech: ['MongoDB', 'Express.js', 'React', 'Node.js'],
-      color: 'white',
-      github: 'https://github.com/codeurge123/Pulse'
+      title: "Pulse",
+      description: "Full-stack social media platform with posts, likes, comments and authentication.",
+      image: pulse,
+      github: "https://github.com/codeurge123/Pulse"
     },
     {
-      title: 'LeetCode Heatmap Tracker',
-      date: 'Dec 2025',
-      description:
-        'Open-source npm package to visualize LeetCode activity as a heatmap and having 900+ downloads',
-      tech: ['React', 'NPM', 'API'],
-      color: 'green',
-      github: 'https://github.com/codeurge123/npm-LeetcodeHeatMap'
+      title: "LeetCode Heatmap",
+      description: "NPM package that visualizes LeetCode activity heatmap with 900+ downloads.",
+      image: npm,
+      github: "https://github.com/codeurge123/npm-LeetcodeHeatMap",
+      live: "http://npmjs.com/package/leetcode-heatmap-track"
     },
     {
-      title: "SkinCureX",
-      date: "July 2025",
-      description:
-        "AI-powered web platform that enables users to upload skin images and receive disease predictions.",
-      tech: ["Python", "Javascript", "Machine Learning", "FAST API"],
-      color: "orange",
-      github: "https://github.com/codeurge123/skincurex",
+      title: "The UnWritten Code",
+      description: "TheUnwrittenCode is a collaborative platform that captures and shares the hidden lessons, insights, and experiences developers gain while building real-world software.",
+      image: blog,
+      github: "https://github.com/codeurge123/TheUnwrittenCode",
+      live: "https://unwrittencodeblog.codeurge.online/"
     },
     {
-      title: "DIJI-YATRA",
-      date: "2024",
-      description:
-        "C++ based travel simulation using Dijkstra’s algorithm for shortest path and traffic simulation.",
-      tech: ["C++", "STL", "Algorithms"],
-      color: "green",
-      github: "https://github.com/codeurge123/DIJI-YATRA"
-    },
-    {
-      title: "Alexa-PersonalAssistant",
-      date: "2024",
-      description:
-        "Voice-enabled assistant built using Amazon Alexa Skills Kit.",
-      tech: ["Alexa Skills Kit", "Python"],
-      color: "purple",
-      github: "https://github.com/codeurge123/Alexa-PersonalAssistant"
-    },
-    {
-      title: 'codeforgood',
-      date: 'In Progress',
-      description:
-        'A platform for developer which help them to contribute in genuine repo',
-      tech: ['MongoDB', 'React', 'Node.js', 'Express.js', 'OAuth'],
-      color: 'blue',
-      github: ''
-    },
+      title: "codeforgood",
+      description: "A platform for developer which help them to contribute in genuine repo.",
+      image: codeforgood,
+    }
   ];
 
-  const [showAll, setShowAll] = React.useState(false);
-
   return (
-    <div className="min-h-screen px-4 sm:px-6 pt-14 md:pt-24 pb-10">
-      <div className="max-w-4xl mx-auto animate-fade-in">
+    <div className="min-h-screen px-6 pt-20 pb-10">
+
+      <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 flex items-center gap-3">
-          Projects 🚀
-        </h1>
+        <h1 className="text-4xl font-bold mb-3">Projects 🚀</h1>
 
-        <p className="text-gray-400 text-base sm:text-lg mb-10 sm:mb-12">
+        <p className="text-gray-400 mb-12">
           Real-world projects where I build scalable web applications and experiment with AI-powered solutions.
         </p>
 
-        {/* Projects */}
-        <div className="space-y-6 sm:space-y-8">
-          {projects
-            .slice(0, showAll ? projects.length : 3)
-            .map((project, index) => (
-              <div
-                key={index}
-                className="bg-black border border-gray-800 rounded-lg p-4 sm:p-6 
-hover:border-gray-700 transition-all duration-300 
-hover:shadow-xl hover:shadow-blue-900/20 
-hover:-translate-y-1"
-              >
-                {/* Title + Links */}
-                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-3">
-                  <h2 className="text-xl sm:text-2xl font-semibold">
-                    {project.title}
-                  </h2>
+        {/* Project Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
 
-                  <div className="flex gap-4">
-                    {project.github && (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white"
-                      >
-                        <Github className="w-5 h-5" />
-                      </a>
-                    )}
+          {projects.map((project, index) => (
 
-                    {project.Live && (
-                      <a
-                        href={project.Live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-white"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                </div>
+            <div
+              key={index}
+              className="bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-gray-700 transition hover:shadow-xl"
+            >
 
-                <p className="text-xs sm:text-sm text-gray-400 mb-3">
-                  {project.date}
-                </p>
+              {/* Image */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover hover:scale-105 transition-all duration-200"
+              />
 
-                <p className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
+              {/* Content */}
+              <div className="p-5">
+
+                <h2 className="text-xl font-semibold mb-2">
+                  {project.title}
+                </h2>
+
+                <p className="text-gray-400 text-sm mb-4">
                   {project.description}
                 </p>
 
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className={`bg-${project.color}-900/30 text-${project.color}-400 px-2.5 py-1 rounded-md text-xs sm:text-sm border border-${project.color}-700/50`}
+                {/* Links */}
+                <div className="flex gap-4">
+
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-gray-400 hover:text-white text-sm"
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      <Github size={18} /> GitHub
+                    </a>
+                  ) : (<div className="border border-gray-700 gap-1 p-1 rounded ">Currently In Progress</div>)}
+
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-gray-400 hover:text-white text-sm"
+                    >
+                      <ExternalLink size={18} /> Live
+                    </a>
+                  )}
+
                 </div>
+
               </div>
-            ))}
 
-          {/* GitHub Link */}
-          {showAll && (
-            <div className="flex justify-center gap-2 text-sm sm:text-lg">
-              For more projects —
-              <a
-                href="https://github.com/codeurge123"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 border-b hover:text-white"
-              >
-                GitHub
-              </a>
             </div>
-          )}
 
-          {/* View All Button */}
-          {projects.length > 3 && (
-            <div className="mt-8 sm:mt-10 flex justify-center">
-              <button
-                onClick={() => setShowAll(!showAll)}
-                className="text-gray-300 cursor-pointer hover:text-white underline underline-offset-4 font-medium"
-              >
-                {showAll ? 'Show less projects' : 'View all projects'}
-              </button>
-            </div>
-          )}
+          ))}
+
         </div>
+
       </div>
     </div>
   );
