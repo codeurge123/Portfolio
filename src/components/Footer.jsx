@@ -42,11 +42,12 @@ function SocialLink({ icon: Icon, href }) {
         rounded-full
         hover:bg-slate-800
         hover:text-white
-        hover:-translate-y-1.5
+        hover:-translate-y-2
         hover:scale-110
         transition-all
-        duration-100
+        duration-150
         flex items-center justify-center
+
       "
     >
       <Icon className="w-5 h-5 sm:w-6 sm:h-6" />

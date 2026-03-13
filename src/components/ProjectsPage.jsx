@@ -38,7 +38,7 @@ export default function ProjectsPage() {
       live: "http://npmjs.com/package/leetcode-heatmap-track"
     },
     {
-      title: "The UnWritten Code",
+      title: "The Unwritten Code",
       description: "TheUnwrittenCode is a collaborative platform that captures and shares the hidden lessons, insights, and experiences developers gain while building real-world software.",
       image: blog,
       github: "https://github.com/codeurge123/TheUnwrittenCode",
@@ -115,7 +115,6 @@ export default function ProjectsPage() {
                       <ExternalLink size={18} /> Live
                     </a>
                   )}
-
                 </div>
 
               </div>
