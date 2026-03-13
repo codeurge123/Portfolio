@@ -6,14 +6,13 @@ import npm from '../assets/npm.png'
 import pulse from '../assets/pulse.png'
 import codeforgood from '../assets/codeforgood.png'
 import blog from '../assets/blog.png'
-import { div } from "motion/react-client";
 
 export default function ProjectsPage() {
 
   const projects = [
     {
       title: "Creatx",
-      description: "Developer-centric UI component platform with animated reusable components.",
+      description: "A MERN Stack developer-centric UI component platform with animated reusable components.",
       image: creatx,
       github: "https://github.com/codeurge123/creatx",
       live: "https://creatxui.vercel.app"
