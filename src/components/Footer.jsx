@@ -3,7 +3,8 @@ import {
   Github,
   Linkedin,
   Mail,
-  Code
+  Code,
+  Rss
 } from 'lucide-react';
 
 export default function Footer() {
@@ -25,6 +26,10 @@ export default function Footer() {
         <SocialLink
           icon={Mail}
           href="mailto:bansalyash316@gmail.com"
+        />
+        <SocialLink 
+          icon={Rss}
+          href="/rss.xml"
         />
       </div>
     </div>
