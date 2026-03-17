@@ -182,7 +182,7 @@ export default function ResumePage() {
         {/* Download */}
         <div className="text-center mt-10">
           <a
-            href="https://drive.google.com/file/d/1oHG48THYUFPd-_0K1wqCf-kVsiaNZ1jT/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1Sx1nqzqqDxS7NeKzuhHZeY_DL9SLATv_/view?usp=drive_link"
             download
             target="_blank"
             className="inline-flex items-center gap-2 bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
