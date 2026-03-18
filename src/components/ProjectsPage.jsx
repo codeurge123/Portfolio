@@ -45,6 +45,7 @@ export default function ProjectsPage() {
         "Full-stack social media platform with posts, likes, comments and authentication.",
       image: pulse,
       github: "https://github.com/codeurge123/Pulse",
+      live: "https://drive.google.com/file/d/1_mRe8fQlF_FuJPysItbuY0shjLUAgmhg/view",
       tech: [SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress, SiSocket]
     },
     {
