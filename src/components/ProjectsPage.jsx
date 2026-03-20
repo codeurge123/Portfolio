@@ -7,7 +7,12 @@ import {
   SiNodedotjs,
   SiTailwindcss,
   SiSocket,
-  SiNpm
+  SiNpm,
+  SiHtml5,
+  SiJavascript,
+  SiCss,
+  SiTensorflow,
+  SiPython
 } from "react-icons/si";
 
 import creatx from "../assets/creatx.png";
@@ -16,6 +21,8 @@ import npm from "../assets/npm.png";
 import pulse from "../assets/pulse.png";
 import codeforgood from "../assets/codeforgood.png";
 import blog from "../assets/blog.png";
+import codeurge from "../assets/codeurge.png";
+import skincurex from "../assets/skincurex.png";
 
 export default function ProjectsPage() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -65,6 +72,23 @@ export default function ProjectsPage() {
       github: "https://github.com/codeurge123/TheUnwrittenCode",
       live: "https://unwrittencodeblog.codeurge.online/",
       tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss]
+    },
+    {
+      title: "CodeUrge",
+      description:
+        "Developer style typing speed test with real-time multiplayer and global leaderboard.",
+      image: codeurge,
+      github: "https://github.com/codeurge123/codeurge",
+      live: "https://www.codeurge.online/",
+      tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss]
+    },
+    {
+      title: "SkinCureX",
+      description:
+        "AI-powered skin disease diagnosis and treatment recommendation platform with real-time chat support.",
+      image: skincurex,
+      github: "https://github.com/codeurge123/SkinCureX",
+      tech: [SiHtml5, SiJavascript, SiCss, SiTensorflow, SiPython]
     },
     {
       title: "codeforgood",
