@@ -35,7 +35,8 @@ export default function ProjectsPage() {
       image: creatx,
       github: "https://github.com/codeurge123/creatx",
       live: "https://creatxui.vercel.app",
-      tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss]
+      tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss],
+      status: "done"
     },
     {
       title: "GetBugged",
@@ -44,7 +45,8 @@ export default function ProjectsPage() {
       image: getbugged,
       github: "https://github.com/codeurge123/getBugged",
       live: "https://getbugged.codeurge.online/",
-      tech: [SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress]
+      tech: [SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress],
+      status: "done"
     },
     {
       title: "Pulse",
@@ -53,7 +55,8 @@ export default function ProjectsPage() {
       image: pulse,
       github: "https://github.com/codeurge123/Pulse",
       live: "https://drive.google.com/file/d/1_mRe8fQlF_FuJPysItbuY0shjLUAgmhg/view",
-      tech: [SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress, SiSocket]
+      tech: [SiReact, SiNodedotjs, SiMongodb, SiTailwindcss, SiExpress, SiSocket],
+      status: "done"
     },
     {
       title: "LeetCode Heatmap",
@@ -62,7 +65,8 @@ export default function ProjectsPage() {
       image: npm,
       github: "https://github.com/codeurge123/npm-LeetcodeHeatMap",
       live: "http://npmjs.com/package/leetcode-heatmap-track",
-      tech: [SiReact, SiNpm]
+      tech: [SiReact, SiNpm],
+      status: "done"
     },
     {
       title: "The Unwritten Code",
@@ -71,7 +75,8 @@ export default function ProjectsPage() {
       image: blog,
       github: "https://github.com/codeurge123/TheUnwrittenCode",
       live: "https://unwrittencodeblog.codeurge.online/",
-      tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss]
+      tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss],
+      status: "in progress"
     },
     {
       title: "CodeUrge",
@@ -80,7 +85,8 @@ export default function ProjectsPage() {
       image: codeurge,
       github: "https://github.com/codeurge123/codeurge",
       live: "https://www.codeurge.online/",
-      tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss]
+      tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss],
+      status: "in progress"
     },
     {
       title: "SkinCureX",
@@ -88,14 +94,16 @@ export default function ProjectsPage() {
         "AI-powered skin disease diagnosis and treatment recommendation platform with real-time chat support.",
       image: skincurex,
       github: "https://github.com/codeurge123/SkinCureX",
-      tech: [SiHtml5, SiJavascript, SiCss, SiTensorflow, SiPython]
+      tech: [SiHtml5, SiJavascript, SiCss, SiTensorflow, SiPython],
+      status: "done"
     },
     {
       title: "codeforgood",
       description:
         "Platform to help developers contribute to genuine repos.",
       image: codeforgood,
-      tech: [SiReact]
+      tech: [SiReact],
+      status: "in progress"
     }
   ];
 
@@ -116,6 +124,18 @@ export default function ProjectsPage() {
               key={index}
               className="relative bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-gray-700 transition hover:shadow-xl"
             >
+
+              {/* Status Badge */}
+              <div
+                className={`absolute bottom-4 right-3 text-xs px-3 py-1 rounded-md font-medium z-10
+    ${project.status === "done"
+                    ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                    : "bg-yellow-500/20 text-yellow-400 border border-yellow-500/30"
+                  }`}
+              >
+                {project.status === "done" ? "Completed" : "In Progress"}
+              </div>
+
               {/* Toggle Button */}
               <button
                 onClick={() =>
@@ -171,11 +191,7 @@ export default function ProjectsPage() {
                     >
                       <Github size={18} /> GitHub
                     </a>
-                  ) : (
-                    <div className="border border-gray-700 px-2 py-1 rounded text-xs">
-                      Currently In Progress
-                    </div>
-                  )}
+                  ): ""}
 
                   {project.live && (
                     <a
