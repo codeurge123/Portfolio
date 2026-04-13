@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <HashRouter>
-      <div className="min-h-screen bg-black text-white font-sans flex justify-center">
+      <div className="min-h-screen bg-black text-white font-sans flex justify-center selection:bg-gray-600 selection:text-white">
 
         {/* Centered Reading Column */}
         <div

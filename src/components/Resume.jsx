@@ -27,12 +27,12 @@ export default function ResumePage() {
                 Metasys Consulting
               </h3>
               <span className="text-xs sm:text-sm text-gray-400">
-                Feb 2026 – Present
+                Feb 2026 – Mar 2026
               </span>
             </div>
 
             <p className="text-gray-400 mb-3 text-sm sm:text-base">
-              Frontend Engineer
+              Frontend Engineer Intern
             </p>
 
             <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm sm:text-base">
