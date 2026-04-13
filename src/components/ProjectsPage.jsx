@@ -191,7 +191,7 @@ export default function ProjectsPage() {
                     >
                       <Github size={18} /> GitHub
                     </a>
-                  ): ""}
+                  ) : ""}
 
                   {project.live && (
                     <a
@@ -209,6 +209,21 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
+
+      <div>
+        <p className="text-gray-500 text-center mt-12">
+          More projects on my{" "}
+          <a
+            href="https://github.com/codeurge123?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-100 hover:underline"
+          >
+            GitHub
+          </a>
+        </p>
+      </div>
+
     </div>
   );
 }
