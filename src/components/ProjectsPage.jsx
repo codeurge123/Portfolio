@@ -79,7 +79,7 @@ export default function ProjectsPage() {
       status: "in progress"
     },
     {
-      title: "CodeUrge",
+      title: "Codeurge - TypeRush",
       description:
         "Developer style typing speed test with real-time multiplayer and global leaderboard.",
       image: codeurge,
