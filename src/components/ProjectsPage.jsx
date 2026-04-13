@@ -36,7 +36,7 @@ export default function ProjectsPage() {
       github: "https://github.com/codeurge123/creatx",
       live: "https://creatxui.vercel.app",
       tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss],
-      status: "done"
+      status: "in progress"
     },
     {
       title: "GetBugged",
