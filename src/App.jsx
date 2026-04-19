@@ -12,7 +12,7 @@ import MobileApp from './MobileApp';
 import useIsMobile from './components/useIsMobile';
 
 export default function App() {
-   const isMobile = useIsMobile();
+  const isMobile = useIsMobile();
 
   if (isMobile) {
     return <MobileApp />;
@@ -20,6 +20,7 @@ export default function App() {
 
   return (
     <HashRouter>
+      
       <div className="min-h-screen bg-black text-white font-sans flex justify-center selection:bg-gray-600 selection:text-white">
 
         {/* Centered Reading Column */}
@@ -31,7 +32,7 @@ export default function App() {
             px-8
             md:px-10
           "
-          
+
         >
 
           <RouteLoader />

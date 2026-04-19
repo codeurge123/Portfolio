@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react"
 import { Award, Code, Briefcase, Download } from 'lucide-react';
 
 export default function ResumePage() {
@@ -6,7 +7,9 @@ export default function ResumePage() {
   const [showresume, setShowResume] = React.useState(false);
 
   const downloadhandler = () => {
-    alert("Sorry, the resume download feature is currently unavailable. Please check back later or contact me directly for a copy of my resume.");
+    setTimeout(() => {
+      alert("Sorry, the resume download feature is currently unavailable. Please check back later or contact me directly for a copy of my resume.");
+    }, 1000);
   };
 
 
@@ -189,16 +192,15 @@ export default function ResumePage() {
 
         {/* Download */}
         <div className="text-center mt-10">
-          <a
-            // href="https://drive.google.com/file/d/1Sx1nqzqqDxS7NeKzuhHZeY_DL9SLATv_/view?usp=drive_link"
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             onClick={downloadhandler}
-            download
-            target="_blank"
             className="inline-flex items-center cursor-pointer gap-2 bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
           >
             <Download className="w-5 h-5" />
             Download Full Resume
-          </a>
+          </motion.button>
         </div>
 
       </div>
