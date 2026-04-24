@@ -12,6 +12,7 @@
   "dependencies": {
     "@radix-ui/react-hover-card": "^1.1.15",
     "@tailwindcss/vite": "^4.1.18",
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
     "motion": "^12.38.0",

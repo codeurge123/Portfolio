@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Analytics } from '@vercel/analytics/react';
 import MobileTopBar from "./components/MobileTopBar";
 import MobileBottomTabs from "./components/MobileBottomTabs";
 import MobileSwipeContainer from "./components/MobileSwipeContainer";
@@ -49,6 +50,8 @@ export default function MobileApp() {
         setActive={setActive}
         onSpecial={() => setSpecialOpen(v => !v)}
       />
+
+      <Analytics />
     </div>
   );
 }

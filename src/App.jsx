@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
@@ -51,7 +52,7 @@ export default function App() {
         </div>
       </div>
 
-
+      <Analytics />
 
     </HashRouter>
   );
