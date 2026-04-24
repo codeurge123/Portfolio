@@ -9,7 +9,7 @@ import ContactPage from './components/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 import RouteLoader from './components/RouteLoader';
 import MobileApp from './MobileApp';
-// import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 import useIsMobile from './components/useIsMobile';
 
 export default function App() {
@@ -21,8 +21,7 @@ export default function App() {
 
   return (
     <HashRouter>
-
-      {/* <Analytics /> */}
+      <Analytics />
       <div className="min-h-screen bg-black text-white font-sans flex justify-center selection:bg-gray-600 selection:text-white">
 
         {/* Centered Reading Column */}
