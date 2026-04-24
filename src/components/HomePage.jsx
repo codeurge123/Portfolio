@@ -19,7 +19,6 @@ export default function HomePage() {
 
                 {/* Hero Section */}
                 <div className="mb-8 sm:mb-10 flex items-center gap-6">
-
                     <img
                         src={yb}
                         alt="Yash Bansal"
