@@ -32,7 +32,7 @@ export default function MobileApp() {
   if (loading) return <PageLoader />;
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden relative">
+    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white font-sans overflow-x-hidden relative">
       <MobileTopBar />
 
       <MobileSwipeContainer active={active} setActive={setActive}>
