@@ -12,7 +12,8 @@ import {
   SiJavascript,
   SiCss,
   SiTensorflow,
-  SiPython
+  SiPython,
+  SiFramer
 } from "react-icons/si";
 
 import creatx from "../assets/creatx.png";
@@ -34,9 +35,9 @@ export default function ProjectsPage() {
         "A MERN Stack developer-centric UI component platform with animated reusable components.",
       image: creatx,
       github: "https://github.com/codeurge123/creatx",
-      live: "https://creatxui.vercel.app",
-      tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss],
-      status: "in progress"
+      live: "http://creatxui.codeurge.online/",
+      tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss, SiFramer],
+      status: "done"
     },
     {
       title: "GetBugged",
