@@ -37,12 +37,12 @@ export default function Navigation() {
 
   const linkClasses = (path) =>
     `block transition-colors text-sm ${isActive(path)
-      ? 'text-black dark:text-white font-semibold'
-      : 'text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white'
+      ? 'text-white font-semibold'
+      : 'text-gray-300 hover:text-white'
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-black/80">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm border-b border-gray-800 bg-black/80">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
 
         {/* Top Row */}
@@ -52,7 +52,7 @@ export default function Navigation() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="sm:hidden text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white text-xl"
+              className="sm:hidden text-gray-300 hover:text-white text-xl"
               aria-label="Toggle menu"
             >
               {menuOpen ? '✕' : '☰'}
@@ -76,16 +76,16 @@ export default function Navigation() {
               aria-label="Toggle theme"
             >
               {isDark ? <>
-                <div className="absolute left-1 top-1 w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300 ">
+                <div className="absolute left-1 top-1 w-5 h-5 bg-slate-100 rounded-full shadow-md transform transition-transform duration-300 ">
                 </div>
               </> : <>
-                <div className="absolute left-1 top-1 w-5 h-5 bg-white rounded-full shadow-md transform transition-transform duration-300">
+                <div className="absolute left-1 top-1 w-5 h-5 bg-slate-100 rounded-full shadow-md transform transition-transform duration-300">
                 </div>
               </>}
             </button> */}
 
             {/* Clock */}
-            <div className="text-gray-400 dark:text-gray-400 text-sm font-mono">
+            <div className="text-gray-400 text-sm font-mono">
               Views {view} |
               IST {formatTime(currentTime)}
             </div>

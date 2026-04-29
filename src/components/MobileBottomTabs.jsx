@@ -16,14 +16,14 @@ export default function MobileBottomTabs({ active, setActive, onSpecial }) {
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 bg-white dark:bg-black h-14 items-center border-t border-gray-200 dark:border-gray-800 flex justify-around py-2">
+    <div className="fixed bottom-0 left-0 right-0 z-50 bg-black h-14 items-center border-t border-gray-800 flex justify-around py-2">
       
       {tabs.map(({ id, icon: Icon }) => (
         <button
           key={id}
           onClick={() => setActive(id)}
           className={`flex flex-col items-center transition-colors ${
-            active === id ? "text-black dark:text-white" : "text-gray-400 dark:text-gray-400"
+            active === id ? "text-white" : "text-gray-400"
           }`}
         >
           <Icon className="w-5 h-5" />
@@ -33,7 +33,7 @@ export default function MobileBottomTabs({ active, setActive, onSpecial }) {
       {/* MORE BUTTON */}
       <button
         onClick={onSpecial}
-        className="flex flex-col items-center text-gray-400 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+        className="flex flex-col items-center text-gray-400 hover:text-white transition-colors"
       >
         <MoreHorizontal className="w-5 h-5" />
       </button>

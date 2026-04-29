@@ -10,7 +10,7 @@ import {
 export default function Footer() {
   return (
     <div className="flex flex-col gap-6 mt-12 mb-18 px-4 sm:px-0">
-      <div className="flex justify-center flex-wrap gap-4 sm:gap-6 text-gray-400 dark:text-gray-400">
+      <div className="flex justify-center flex-wrap gap-4 sm:gap-6 text-gray-400">
         <SocialLink
           icon={Github}
           href="https://github.com/codeurge123"
@@ -45,8 +45,8 @@ function SocialLink({ icon: Icon, href }) {
       className="
         p-3 sm:p-3.5
         rounded-full
-        hover:bg-gray-200 dark:hover:bg-slate-800
-        hover:text-black dark:hover:text-white
+        hover:bg-slate-800
+        hover:text-white
         hover:-translate-y-2
         hover:scale-110
         transition-all

@@ -23,14 +23,14 @@ export default function App() {
     <HashRouter>
 
       {/* <Analytics /> */}
-      <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white font-sans flex justify-center selection:bg-gray-600 selection:text-white dark:selection:bg-gray-600 dark:selection:text-white">
+      <div className="min-h-screen bg-black text-white font-sans flex justify-center selection:bg-gray-600 selection:text-white">
 
         {/* Centered Reading Column */}
         <div
           className="
             w-full
             max-w-4xl
-            border-gray-300 dark:border-white/15
+            border-white/15
             px-8
             md:px-10
           "

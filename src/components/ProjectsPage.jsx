@@ -123,7 +123,7 @@ export default function ProjectsPage() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative bg-white dark:bg-black border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden hover:border-gray-300 dark:hover:border-gray-700 hover:ring-1 hover:ring-gray-300 dark:hover:ring-gray-700 transition hover:shadow-xl"
+              className="relative bg-slate-950 border border-gray-800 rounded-xl overflow-hidden transition hover:border-gray-700 hover:ring-1 hover:ring-gray-700 hover:shadow-xl"
             >
 
               {/* Status Badge */}
@@ -142,7 +142,7 @@ export default function ProjectsPage() {
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
-                className="absolute top-2 right-3 cursor-pointer text-xs px-3 py-1 bg-gray-200 dark:bg-gray-800 text-black dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition z-10"
+                className="absolute top-2 right-3 cursor-pointer text-xs px-3 py-1 bg-gray-900 text-white rounded-md hover:bg-gray-800 transition z-10"
               >
                 {openIndex === index ? "Hide" : "Tech"}
               </button>
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
                   {project.tech?.map((Icon, i) => (
                     <div
                       key={i}
-                      className="p-2 bg-gray-100 dark:bg-gray-900 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+                      className="p-2 bg-gray-900 rounded-lg hover:bg-gray-800 transition"
                     >
                       <Icon size={18} />
                     </div>
@@ -188,7 +188,7 @@ export default function ProjectsPage() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-gray-400 hover:text-black dark:hover:text-white text-sm"
+                      className="flex items-center gap-1 text-gray-400 hover:text-white text-sm"
                     >
                       <Github size={18} /> GitHub
                     </a>
@@ -199,7 +199,7 @@ export default function ProjectsPage() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-gray-400 hover:text-black dark:hover:text-white text-sm"
+                      className="flex items-center gap-1 text-gray-400 hover:text-white text-sm"
                     >
                       <ExternalLink size={18} /> Live
                     </a>

@@ -196,7 +196,7 @@ export default function ResumePage() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             onClick={downloadhandler}
-            className="inline-flex items-center cursor-pointer gap-2 bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+            className="inline-flex items-center cursor-pointer gap-2 bg-zinc-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-slate-700 transition-colors"
           >
             <Download className="w-5 h-5" />
             Download Full Resume
