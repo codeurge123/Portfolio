@@ -133,7 +133,7 @@ export default function ResumePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
               { title: "Languages", items: ['C++', 'TypeScript', 'JavaScript', 'HTML', 'CSS'] },
-              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass', 'Socket.IO'] },
+              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass', 'Socket.IO','framer-motion'] },
               { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma', 'Docker'] },
               { title: "Databases / Cloud", items: ['Firebase', 'MongoDB', 'MySQL'] },
             ].map(section => (

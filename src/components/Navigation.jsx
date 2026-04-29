@@ -1,5 +1,7 @@
+import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { VIEW_API_END_POINT } from '../utils/constant.js';
 // import { useTheme } from './ThemeContext.jsx';
 
 export default function Navigation() {
@@ -11,6 +13,16 @@ export default function Navigation() {
   useEffect(() => {
     const timer = setInterval(() => setCurrentTime(new Date()), 1000);
     return () => clearInterval(timer);
+  }, []);
+
+
+  const [view, setView] = useState(0);
+
+  useEffect(() => {
+    axios.get(`${VIEW_API_END_POINT}/api/v1/views`)
+      .then(res => res.data)
+      .then(data => setView(data.count))
+      .catch(err => console.error("Error fetching view count:", err));
   }, []);
 
   const formatTime = (date) =>
@@ -74,6 +86,7 @@ export default function Navigation() {
 
             {/* Clock */}
             <div className="text-gray-400 dark:text-gray-400 text-sm font-mono">
+              Views :  {view} |
               IST {formatTime(currentTime)}
             </div>
           </div>
