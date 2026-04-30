@@ -108,7 +108,7 @@ export const LinkPreview = ({
                                 }}>
                                 <a
                                     href={url}
-                                    className="block p-1 bg-slate-950 border-2 border-transparent shadow rounded-xl hover:border-slate-700"
+                                    className="block p-1 bg-slate-900 border-2 border-transparent shadow rounded-xl hover:border-slate-700"
                                     style={{ fontSize: 0 }}
                                     target="_blank"
                                     >
