@@ -1,5 +1,7 @@
 import React from "react";
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, Twitter, X } from 'lucide-react';
+import { RiTwitterXFill } from "react-icons/ri";
+
 import discord from "../../public/discord.png"
 
 export default function ContactPage() {
@@ -70,19 +72,14 @@ export default function ContactPage() {
             >
               <Github className="w-7 h-7 sm:w-8 sm:h-8" />
             </a>
+
             <a
               href="https://x.com/codeurge__"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors"
+              className="text-gray-400 hover:text-white"
             >
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-4 h-4 sm:w-7 sm:h-7"
-              >
-                <path d="M18.901 1H22L14.96 9.06L23 23H16.708L11.708 15.816L5.29 23H2.19L9.71 14.46L2 1H8.438L12.96 7.588L18.901 1ZM17.81 21H19.5L7.48 3H5.7L17.81 21Z" />
-              </svg>
+              <RiTwitterXFill className="w-7 h-7 sm:w-8 sm:h-8" />
             </a>
 
 

@@ -1,117 +1,112 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0"
-     xmlns:atom="http://www.w3.org/2005/Atom"
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:content="http://purl.org/rss/1.0/modules/content/">
 
-  <channel>
-    <title>Yash Bansal | Developer Portfolio</title>
-    <description>Latest projects and work by Yash Bansal</description>
-    <link>https://yashbansal.codeurge.online/</link>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 17 Mar 2026 12:00:00 GMT</lastBuildDate>
+<channel>
+<title>Yash Bansal | Developer Portfolio</title>
+<description>Latest projects and work by Yash Bansal</description>
+<link>https://yashbansal.codeurge.online/</link>
+<language>en-us</language>
+<lastBuildDate>Fri, 01 May 2026 12:00:00 GMT</lastBuildDate>
 
-    <!-- Self reference -->
-    <atom:link href="https://yashbansal.codeurge.online/rss.xml" rel="self" type="application/rss+xml"/>
+<atom:link href="https://yashbansal.codeurge.online/rss.xml" rel="self" type="application/rss+xml"/>
 
-    <!-- Creatx -->
-    <item>
-      <title>Creatx - Animation Platform</title>
-      <link>https://creatxui.codeurge.online/</link>
-      <guid isPermaLink="true">https://creatxui.codeurge.online/</guid>
-      <pubDate>Tue, 17 Dec 2025 10:00:00 GMT</pubDate>
-      <category>Frontend</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
+<!-- Creatx -->
+<item>
+<title>Creatx</title>
+<link>http://creatxui.codeurge.online/</link>
+<guid>https://github.com/codeurge123/creatx</guid>
+<pubDate>Tue, 17 Dec 2025 10:00:00 GMT</pubDate>
+<category>Full Stack</category>
+<description>
+A MERN Stack developer-centric UI component platform with animated reusable components.
+</description>
+</item>
 
-      <description>
-        Developer-centric UI animation platform with reusable micro-interactions.
-      </description>
+<!-- GetBugged -->
+<item>
+<title>GetBugged</title>
+<link>https://getbugged.codeurge.online/</link>
+<guid>https://github.com/codeurge123/getBugged</guid>
+<pubDate>Mon, 10 Mar 2026 10:00:00 GMT</pubDate>
+<category>Full Stack</category>
+<description>
+Platform for developers to discover, report and track bugs collaboratively.
+</description>
+</item>
 
-      <content:encoded>
-        <![CDATA[
-          <h2>Creatx</h2>
-          <p>Reusable animation components for modern UI.</p>
-          <p><a href="https://creatxui.codeurge.online/">View Project</a></p>
-        ]]>
-      </content:encoded>
-    </item>
+<!-- Pulse -->
+<item>
+<title>Pulse</title>
+<link>https://drive.google.com/file/d/1_mRe8fQlF_FuJPysItbuY0shjLUAgmhg/view</link>
+<guid>https://github.com/codeurge123/Pulse</guid>
+<pubDate>Sun, 02 Mar 2026 10:00:00 GMT</pubDate>
+<category>Full Stack</category>
+<description>
+Full-stack social media platform with posts, likes, comments and authentication.
+</description>
+</item>
 
-    <!-- GetBugged -->
-    <item>
-      <title>GetBugged - Debugging Platform</title>
-      <link>https://getbugged.codeurge.online/</link>
-      <guid isPermaLink="true">https://getbugged.codeurge.online/</guid>
-      <pubDate>Mon, 10 Mar 2026 10:00:00 GMT</pubDate>
-      <category>Full Stack</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
+<!-- LeetCode Heatmap -->
+<item>
+<title>LeetCode Heatmap</title>
+<link>http://npmjs.com/package/leetcode-heatmap-track</link>
+<guid>https://github.com/codeurge123/npm-LeetcodeHeatMap</guid>
+<pubDate>Sat, 25 Dec 2025 09:00:00 GMT</pubDate>
+<category>Open Source</category>
+<description>
+NPM package that visualizes LeetCode activity heatmap with 900+ downloads.
+</description>
+</item>
 
-      <description>
-        AI-powered platform to practice debugging with injected bugs.
-      </description>
+<!-- Flowbit -->
+<item>
+<title>Flowbit</title>
+<link>https://flowbits-two.vercel.app/</link>
+<guid>https://github.com/codeurge123/Flowbit</guid>
+<pubDate>Wed, 01 Apr 2026 10:00:00 GMT</pubDate>
+<category>Full Stack</category>
+<description>
+Let’s introduce a new approach to tracking team tickets and performance.
+</description>
+</item>
 
-      <content:encoded>
-        <![CDATA[
-          <h2>GetBugged</h2>
-          <p>Practice debugging with AI-generated scenarios.</p>
-          <p><a href="https://getbugged.codeurge.online/">Try Now</a></p>
-        ]]>
-      </content:encoded>
-    </item>
+<!-- Codeurge - TypeRush -->
+<item>
+<title>Codeurge - TypeRush (In Progress)</title>
+<link>https://www.codeurge.online/</link>
+<guid>https://github.com/codeurge123/codeurge</guid>
+<pubDate>Thu, 10 Apr 2026 10:00:00 GMT</pubDate>
+<category>Realtime App</category>
+<description>
+Developer style typing speed test with real-time multiplayer and global leaderboard.
+</description>
+</item>
 
-    <!-- Pulse -->
-    <item>
-      <title>Pulse - Social Media Platform</title>
-      <link>https://github.com/codeurge123/pulse</link>
-      <guid isPermaLink="true">https://github.com/codeurge123/pulse</guid>
-      <pubDate>Sun, 02 Mar 2026 10:00:00 GMT</pubDate>
-      <category>Full Stack</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
+<!-- SkinCureX -->
+<item>
+<title>SkinCureX</title>
+<link>https://github.com/codeurge123/SkinCureX</link>
+<guid>https://github.com/codeurge123/SkinCureX</guid>
+<pubDate>Mon, 15 Jan 2026 10:00:00 GMT</pubDate>
+<category>AI/ML</category>
+<description>
+AI-powered skin disease diagnosis and treatment recommendation platform with real-time chat support.
+</description>
+</item>
 
-      <description>
-        Social media platform with posts, likes, comments, and authentication.
-      </description>
-    </item>
+<!-- CodeForGood -->
+<item>
+<title>CodeForGood (In Progress)</title>
+<link>InProgress</link>
+<guid>project-codeforgood</guid>
+<pubDate>Wed, 01 Jan 2026 10:00:00 GMT</pubDate>
+<category>Open Source</category>
+<description>
+Platform to help developers contribute to genuine repos.
+</description>
+</item>
 
-    <!-- LeetCode Heatmap -->
-    <item>
-      <title>LeetCode Heatmap</title>
-      <link>https://www.npmjs.com/package/leetcode-heatmap-track</link>
-      <guid isPermaLink="true">https://www.npmjs.com/package/leetcode-heatmap-track</guid>
-      <pubDate>Sat, 25 Dec 2025 09:00:00 GMT</pubDate>
-      <category>Open Source</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
-
-      <description>
-        NPM package to visualize LeetCode activity heatmap.
-      </description>
-    </item>
-
-    <!-- The Unwritten Code -->
-    <item>
-      <title>The Unwritten Code</title>
-      <link>https://unwrittencodeblog.codeurge.online/</link>
-      <guid isPermaLink="true">https://unwrittencodeblog.codeurge.online/</guid>
-      <pubDate>Fri, 28 Feb 2026 10:00:00 GMT</pubDate>
-      <category>Community</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
-
-      <description>
-        Platform sharing hidden developer insights and real-world experiences.
-      </description>
-    </item>
-
-    <!-- CodeForGood -->
-    <item>
-      <title>CodeForGood (In Progress)</title>
-      <link>InProgress</link>
-      <guid>project-codeforgood</guid>
-      <pubDate>Wed, 01 Jan 2026 10:00:00 GMT</pubDate>
-      <category>Open Source</category>
-      <author>bansalyash316@gmail.com (Yash Bansal)</author>
-
-      <description>
-        Platform helping developers contribute to meaningful open-source projects.
-      </description>
-    </item>
-
-  </channel>
+</channel>
 </rss>

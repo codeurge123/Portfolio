@@ -167,7 +167,7 @@ export default function ResumePage() {
               <Code className="w-7 h-7 text-orange-400 mb-3" />
               <h3 className="text-lg font-semibold mb-1">LeetCode Excellence</h3>
               <p className="text-gray-400 text-sm sm:text-base">
-                Solved 500+ problems with a max rating of 1544
+                Solved 500+ problems with a max rating of 1553
               </p>
             </div>
 

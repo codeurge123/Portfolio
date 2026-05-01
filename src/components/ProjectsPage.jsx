@@ -21,7 +21,8 @@ import getbugged from "../assets/getbugged.png";
 import npm from "../assets/npm.png";
 import pulse from "../assets/pulse.png";
 import codeforgood from "../assets/codeforgood.png";
-import blog from "../assets/blog.png";
+// import blog from "../assets/blog.png";
+import flowbit from "../assets/flowbit.png";
 import codeurge from "../assets/codeurge.png";
 import skincurex from "../assets/skincurex.png";
 
@@ -70,14 +71,14 @@ export default function ProjectsPage() {
       status: "done"
     },
     {
-      title: "The Unwritten Code",
+      title: "Flowbit",
       description:
-        "Collaborative platform for sharing real-world dev insights.",
-      image: blog,
-      github: "https://github.com/codeurge123/TheUnwrittenCode",
-      live: "https://unwrittencodeblog.codeurge.online/",
+        "Let’s introduce a new approach to tracking team tickets and performance.",
+      image: flowbit,
+      github: "https://github.com/codeurge123/Flowbit",
+      live: "https://flowbits-two.vercel.app/",
       tech: [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiTailwindcss],
-      status: "in progress"
+      status: "done"
     },
     {
       title: "Codeurge - TypeRush",
