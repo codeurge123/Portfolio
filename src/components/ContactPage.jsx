@@ -1,6 +1,8 @@
 import React from "react";
 import { Github, Linkedin, Mail, Twitter, X } from 'lucide-react';
 import { RiTwitterXFill } from "react-icons/ri";
+import { FaDiscord } from "react-icons/fa";
+
 
 import discord from "../../public/discord.png"
 
@@ -105,13 +107,10 @@ export default function ContactPage() {
               href="https://discord.com/channels/1469757891820126241/1469757892620976203"
               target="_blank"
               rel="noopener noreferrer"
-              className="group transition-all duration-200 scale-140"
+              className="text-gray-400 hover:text-white"
             >
-              <img
-                src={discord}
-                alt="Discord"
-                className="w-7 h-7 sm:w-8 sm:h-8 opacity-70 group-hover:opacity-100"
-              />
+              <FaDiscord className="w-7 h-7 sm:w-8 sm:h-8" />
+
             </a>
 
           </div>
