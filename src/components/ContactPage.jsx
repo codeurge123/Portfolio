@@ -4,7 +4,6 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaDiscord } from "react-icons/fa";
 
 
-import discord from "../../public/discord.png"
 
 export default function ContactPage() {
   return (
