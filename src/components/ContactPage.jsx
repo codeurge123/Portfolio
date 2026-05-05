@@ -102,7 +102,7 @@ export default function ContactPage() {
 
 
             <a
-              href="https://discord.com/channels/@me"
+              href="https://discord.com/channels/1469757891820126241/1469757892620976203"
               target="_blank"
               rel="noopener noreferrer"
               className="group transition-all duration-200 scale-140"
