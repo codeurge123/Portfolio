@@ -6,11 +6,17 @@ import {
   Code,
   Rss
 } from 'lucide-react';
+import { SiLeetcode } from "react-icons/si";
+
 
 export default function Footer() {
   return (
     <div className="flex flex-col gap-6 mt-12 mb-18 px-4 sm:px-0">
       <div className="flex justify-center flex-wrap gap-4 sm:gap-6 text-gray-400">
+        <SocialLink
+          icon={Mail}
+          href="mailto:bansalyash316@gmail.com"
+        />
         <SocialLink
           icon={Github}
           href="https://github.com/codeurge123"
@@ -20,12 +26,8 @@ export default function Footer() {
           href="https://www.linkedin.com/in/yash-bansal-a67562286"
         />
         <SocialLink
-          icon={Code}
+          icon={SiLeetcode}
           href="https://leetcode.com/code_urgyb316_"
-        />
-        <SocialLink
-          icon={Mail}
-          href="mailto:bansalyash316@gmail.com"
         />
         <SocialLink 
           icon={Rss}
