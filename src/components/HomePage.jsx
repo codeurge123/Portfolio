@@ -87,7 +87,7 @@ export default function HomePage() {
                             />
 
                             <p className="text-xs text-green-400 mt-3">
-                                Used by 1000+ developers
+                                Used by 1500+ developers
                             </p>
 
                         </a>
@@ -119,7 +119,7 @@ export default function HomePage() {
                             />
 
                             <p className="text-xs text-gray-400 mt-3">
-                                Open source utility for backend testing (500+ weekly downloads)
+                                Open source utility for backend api testing (650+ downloads)
                             </p>
 
                         </a>
@@ -136,7 +136,7 @@ export default function HomePage() {
                     </h2>
 
                     <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 md:p-4 overflow-x-auto">
-                        <div className="min-w-[700px]" data-no-swipe>
+                        <div className="min-w-[700px]" data-no-swipe >
                             <GitHubCalendar
                                 username="codeurge123"
                                 blockSize={12}
