@@ -35,10 +35,43 @@ export default function ResumePage() {
           <div className="bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-800 hover:border-orange-500 transition-colors">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
               <h3 className="text-lg sm:text-xl font-semibold">
+                Ethara.AI
+              </h3>
+
+              <span className="text-xs sm:text-sm text-gray-400">
+                May 2026 – Present
+              </span>
+            </div>
+
+            <p className="text-gray-400 mb-3 text-sm sm:text-base">
+              Software Engineer
+            </p>
+
+            <ul className="list-disc list-inside text-gray-400 space-y-2 text-sm sm:text-base">
+              <li>
+                Optimized and fine-tuned
+                <span className="text-gray-300"> LLM models</span> to improve response accuracy, inference efficiency, and real-world performance.
+              </li>
+
+              <li>
+                Implemented
+                <span className="text-gray-300"> Docker-based deployment workflows</span> for scalable, portable, and consistent development environments.
+              </li>
+              <li>
+                Worked on
+                <span className="text-gray-300"> prompt engineering</span>,
+                <span className="text-gray-300"> model evaluation</span>, and
+                <span className="text-gray-300"> LLM optimization techniques</span> to enhance AI application reliability and output quality.
+              </li>
+            </ul>
+          </div>
+          <div className="bg-gray-900/50 p-4 sm:p-6 mt-5 rounded-lg border border-gray-800 hover:border-orange-500 transition-colors">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
+              <h3 className="text-lg sm:text-xl font-semibold">
                 Metasys Consulting
               </h3>
               <span className="text-xs sm:text-sm text-gray-400">
-                Feb 2026 – Mar 2026
+                Feb 2026 – April 2026
               </span>
             </div>
 
@@ -133,7 +166,7 @@ export default function ResumePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
               { title: "Languages", items: ['C++', 'TypeScript', 'JavaScript', 'HTML', 'CSS'] },
-              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass', 'Socket.IO','framer-motion'] },
+              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass', 'Socket.IO', 'framer-motion'] },
               { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma', 'Docker'] },
               { title: "Databases / Cloud", items: ['Firebase', 'MongoDB', 'MySQL'] },
             ].map(section => (
