@@ -11,13 +11,19 @@ import { GitHubCalendar } from 'react-github-calendar';
 import { LinkPreviewProfileSection } from './LivePreviewProfileSection';
 import { LivePreviewWrittenSection } from './LivePreviewWrittenSection';
 import yb from '../../public/yb.png';
+import uper from '../../public/uper.jpg';
 
 export default function HomePage() {
     return (
         <div className="min-h-screen flex items-start justify-center px-4 sm:px-6 pt-16 sm:pt-20">
-            <div className="max-w-4xl w-full animate-fade-in">
+
+
+            <div className="max-w-4xl flex flex-col w-full animate-fade-in">
 
                 {/* Hero Section */}
+                {/* <div className="mb-10 sm:mb-14 flex items-center justify-center">
+                    <img src={uper} className="w-380 h-50 overflow-hidden flex items-center justify-center border-gray-800" alt="" />
+                </div> */}
                 <div className="mb-8 sm:mb-10 flex items-center gap-6">
                     <img
                         src={yb}
