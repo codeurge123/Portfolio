@@ -86,7 +86,7 @@ export default function Navigation() {
 
             {/* Clock */}
             <div className="text-gray-400 text-sm font-mono">
-              Views {view} |
+              Views #{view} |
               IST {formatTime(currentTime)}
             </div>
           </div>
