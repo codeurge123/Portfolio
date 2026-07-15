@@ -22,14 +22,6 @@ const navItems = [
   { label: 'Contact', to: '/contact', icon: Folder },
 ];
 
-const socialItems = [
-  { label: 'GitHub', href: 'https://github.com/codeurge123', icon: Github },
-  { label: 'Mail', href: 'mailto:bansalyash316@gmail.com', icon: Mail },
-  { label: 'LeetCode', href: 'https://leetcode.com/code_urgyb316_', icon: SiLeetcode },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/yash-bansal-a67562286', icon: Linkedin },
-  { label: 'X', href: 'https://x.com/codeurge__', icon: RiTwitterXFill },
-  { label: 'RSS Feed', href: '/rss.xml', icon: Rss },
-];
 
 export default function Navigation() {
   const [socialOpen, setSocialOpen] = useState(false);
@@ -112,65 +104,28 @@ export default function Navigation() {
               );
             })}
 
-          <div className="relative h-[34px] w-[34px]">
-            <button
-              type="button"
-              onClick={() => setSocialOpen((open) => !open)}
-              aria-label="Open social links"
-              aria-expanded={socialOpen}
-              title="GitHub"
-              className={`
-                group relative flex h-[34px] w-[34px] items-center justify-center rounded-full
-                transition-all duration-200
-                ${socialOpen
-                  ? 'bg-white text-[#0b0f0f] shadow-[0_0_0_3px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(0,0,0,0.18)]'
-                  : 'text-zinc-400 hover:bg-white/8 hover:text-white'
-                }
-              `}
-            >
-              <Github className="h-[18px] w-[18px] cursor-pointer" strokeWidth={2.3} />
-              <span className="pointer-events-none absolute right-[calc(100%+12px)] rounded-md border border-white/10 bg-zinc-950 px-2 py-1 text-xs text-zinc-200 opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
-                GitHub
-              </span>
-            </button>
-
-            <div
-              className="
-                absolute left-[calc(100%+14px)] top-1/2 flex -translate-y-1/2 flex-col gap-2.5
-                rounded-full border border-white/10 bg-[#0b0f0f]/95 p-2.5 shadow-[0_14px_34px_rgba(0,0,0,0.52)]
-                backdrop-blur-md transition-all duration-300 ease-out
-              "
-              style={{
-                opacity: socialOpen ? 1 : 0,
-                transform: socialOpen ? 'translate(0, -50%) scale(1)' : 'translate(-10px, -50%) scale(0.96)',
-                pointerEvents: socialOpen ? 'auto' : 'none',
-              }}
-            >
-              {socialItems.map(({ label, href, icon: Icon }, index) => (
-                <a
-                  key={label}
-                  href={href}
-                  target={href.startsWith('mailto:') ? undefined : '_blank'}
-                  rel={href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                  aria-label={label}
-                  title={label}
-                  className="
-                    flex h-10 w-10 items-center justify-center rounded-full
-                    text-zinc-400 transition-all duration-200 hover:bg-white/8 hover:text-white
-                  "
-                  style={{
-                    transitionDelay: socialOpen ? `${index * 35}ms` : '0ms',
-                    transform: socialOpen ? 'translateX(0)' : 'translateX(-6px)',
-                  }}
-                >
-                  {React.createElement(Icon, {
-                    className: 'h-5 w-5',
-                    strokeWidth: 2.2,
-                  })}
-                </a>
-              ))}
+            <div className="relative h-[34px] w-[34px]">
+              <a
+                href="https://github.com/codeurge123"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open GitHub profile"
+                title="GitHub"
+                className={`
+      group relative flex h-[34px] w-[34px] items-center justify-center rounded-full
+      transition-all duration-200
+      ${socialOpen
+                    ? "bg-white text-[#0b0f0f] shadow-[0_0_0_3px_rgba(255,255,255,0.08),inset_0_0_0_1px_rgba(0,0,0,0.18)]"
+                    : "text-zinc-400 hover:bg-white/8 hover:text-white"
+                  }
+    `}
+              >
+                <Github className="h-[18px] w-[18px]" strokeWidth={2.3} />
+                <span className="pointer-events-none absolute right-[calc(100%+12px)] rounded-md border border-white/10 bg-zinc-950 px-2 py-1 text-xs text-zinc-200 opacity-0 shadow-lg transition-opacity group-hover:opacity-100">
+                  GitHub
+                </span>
+              </a>
             </div>
-          </div>
           </div>
         </div>
       </nav>
