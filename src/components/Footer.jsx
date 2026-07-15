@@ -3,7 +3,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Code,
   Rss
 } from 'lucide-react';
 import { SiLeetcode } from "react-icons/si";
@@ -29,7 +28,7 @@ export default function Footer() {
           icon={SiLeetcode}
           href="https://leetcode.com/code_urgyb316_"
         />
-        <SocialLink 
+        <SocialLink
           icon={Rss}
           href="/rss.xml"
         />
@@ -57,7 +56,9 @@ function SocialLink({ icon: Icon, href }) {
 
       "
     >
-      <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+      {React.createElement(Icon, {
+        className: 'w-5 h-5 sm:w-6 sm:h-6',
+      })}
     </a>
   );
 }
