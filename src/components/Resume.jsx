@@ -165,10 +165,10 @@ export default function ResumePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {[
-              { title: "Languages", items: ['C++', 'TypeScript', 'JavaScript', 'HTML', 'CSS'] },
-              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'Sass', 'Socket.IO', 'framer-motion'] },
+              { title: "Languages", items: ['C++', 'TypeScript', 'JavaScript'] },
+              { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'LangChain', 'Sass', 'Socket.IO', 'framer-motion'] },
               { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma', 'Docker', 'BullMQ'] },
-              { title: "Databases / Cloud", items: ['Firebase', 'MongoDB', 'MySQL', 'Redis'] },
+              { title: "Databases / Cloud", items: ['Firebase', 'MongoDB', 'MySQL', 'Redis', 'Pinecone(vectorDB)'] },
             ].map(section => (
               <div key={section.title} className="bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-800">
                 <h3 className="text-base sm:text-lg font-semibold mb-3 text-gray-300">
