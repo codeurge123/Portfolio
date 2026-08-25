@@ -150,7 +150,7 @@ export default function ResumePage() {
               B.Tech – Electronics & Communication Engineering
             </p>
             <p className="text-green-400 font-semibold mt-1">
-              CGPA: 8.25/10
+              CGPA: 8.4/10
             </p>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function ResumePage() {
               <Code className="w-7 h-7 text-orange-400 mb-3" />
               <h3 className="text-lg font-semibold mb-1">LeetCode Excellence</h3>
               <p className="text-gray-400 text-sm sm:text-base">
-                Solved 500+ problems with a max rating of 1553
+                Solved 500+ problems with a max rating of 1558
               </p>
             </div>
 
