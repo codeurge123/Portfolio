@@ -8,7 +8,7 @@ export default function ResumePage() {
 
   const downloadhandler = () => {
     setTimeout(() => {
-      alert("Sorry, the resume download feature is currently unavailable. Please check back later or contact me directly for a copy of my resume.");
+      alert("Lol ~ Resume include my number so i don't have to give it to you 😅");
     }, 1000);
   };
 
