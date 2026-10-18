@@ -26,7 +26,7 @@ export default function Footer() {
         />
         <SocialLink
           icon={SiLeetcode}
-          href="https://leetcode.com/code_urge"
+          href="https://leetcode.com/code_urgyb316_/"
         />
         <SocialLink
           icon={Rss}

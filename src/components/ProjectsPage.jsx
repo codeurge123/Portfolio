@@ -13,14 +13,16 @@ import {
   SiCss,
   SiTensorflow,
   SiPython,
-  SiFramer
+  SiFramer,
+  SiElectron,
 } from "react-icons/si";
 
 import creatx from "../assets/creatx.png";
+import ctrl from "../assets/ctrl.png";
 import getbugged from "../assets/getbugged.png";
 import npm from "../assets/npm.png";
 import pulse from "../assets/pulse.png";
-import codeforgood from "../assets/codeforgood.png";
+// import codeforgood from "../assets/codeforgood.png";
 // import blog from "../assets/blog.png";
 import flowbit from "../assets/flowbit.png";
 import codeurge from "../assets/codeurge.png";
@@ -30,6 +32,16 @@ export default function ProjectsPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const projects = [
+    {
+      title: "Ctrl",
+      description:
+        "A Desktop application that allows developers to control their system using voice commands. It provides a hands-free experience for executing various tasks and commands.",
+      image: ctrl,
+      github: "https://github.com/codeurge123/ctrl",
+      live: "",
+      tech: [SiMongodb, SiExpress, SiReact, SiNodedotjs, SiTailwindcss, SiFramer, SiElectron],
+      status: "in progress"
+    },
     {
       title: "Creatx",
       description:
@@ -98,14 +110,6 @@ export default function ProjectsPage() {
       github: "https://github.com/codeurge123/SkinCureX",
       tech: [SiHtml5, SiJavascript, SiCss, SiTensorflow, SiPython],
       status: "done"
-    },
-    {
-      title: "codeforgood",
-      description:
-        "Platform to help developers contribute to genuine repos.",
-      image: codeforgood,
-      tech: [SiReact],
-      status: "in progress"
     }
   ];
 

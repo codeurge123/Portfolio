@@ -167,7 +167,7 @@ export default function ResumePage() {
             {[
               { title: "Languages", items: ['C++', 'TypeScript', 'JavaScript'] },
               { title: "Frameworks", items: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'LangChain', 'Sass', 'Socket.IO', 'framer-motion'] },
-              { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma', 'Docker', 'BullMQ'] },
+              { title: "Tools", items: ['Git', 'GitHub', 'Postman API', 'Figma', 'Docker', 'BullMQ', 'MCP'] },
               { title: "Databases / Cloud", items: ['Firebase', 'MongoDB', 'MySQL', 'Redis', 'Pinecone(vectorDB)'] },
             ].map(section => (
               <div key={section.title} className="bg-gray-900/50 p-4 sm:p-6 rounded-lg border border-gray-800">
